@@ -1,0 +1,39 @@
+.IndexContent{
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0px;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  background: transparent;
+}
+
+.content{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-content: center;
+  h1,h3{
+    font-family: 'Lato', sans-serif;
+    color:white;
+    font-weight: normal;
+    padding: 0; margin: 0;
+    text-shadow: 0.1px 0.1px 20px #1b7777;
+    -webkit-text-stroke: 0.1px #175f5f;  }
+  h1{  font-size: 6rem; }
+  h3 {font-size: 2.5rem; }
+  .buttons{
+    padding-top: 1rem;
+    display:flex;
+    justify-content: center;
+  }
+
+}
+  

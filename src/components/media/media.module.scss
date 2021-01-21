@@ -7,46 +7,28 @@
   left: 0;
 }
 
-.video-header {
+.videoHeader {
   position: absolute;
   text-align: center;
   width: 100vw;
   height: 100vh;
   
-  &, video, .viewport-header {
+  &, video, .viewportHeader {
     @include coverer;
   }
   video {
     background: black;
     object-fit: cover;
   }
-  .viewport-header {
+  .viewportHeader {
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 1;
     opacity: var(--headerOpacity);
     transform: scale(var(--headerScale));
-    
+
   }
 }
 
-html, body {
-  height: 100vh;
-}
-body {
-  margin: 0;
-}
-
-main {
-  background: white;
-  position: relative;
-  margin-top: 100vh;
-  
-  &::before {
-    content: "";
-    @include coverer;
-    top: -100vh;
-  }
-}
   
