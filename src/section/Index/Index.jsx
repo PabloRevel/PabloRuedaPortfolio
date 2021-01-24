@@ -1,8 +1,10 @@
 import React from 'react';
 import VideoBackground from "../../components/media/videoBackground";
 import indexStyles from "./index.module.scss";
-import ImageExport from "./../../components/media/imageExport"
-import Button from "../../components/button/Button"
+import ImageExport from "./../../components/media/imageExport";
+import Button from "../../components/button/Button";
+
+import { Link } from 'react-scroll';
 
 const Index = () => {
     return ( 
@@ -20,9 +22,11 @@ const Index = () => {
                     </div>
     
                     <h1>Pablo Rueda</h1>
-                    <h3>Web Development</h3>
+                    <h3>Front-end Development</h3>
                     <div className={indexStyles.buttons}>
+                    <Link to="about" smooth duration={1000}>
                         <Button mainColor="#8DBE49">Know More</Button>
+                    </Link>       
                     </div>
                 </div>
             </VideoBackground>
