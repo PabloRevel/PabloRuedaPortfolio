@@ -13,8 +13,8 @@ const Projects = () => {
                     <Grid item xs={12} sm={6}>
                         <Card imgId={"project1"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS, React, Gatsby"} title={"Psychologist web site"} 
                         gitLink={"https://github.com/Pablo-Rueda/SofiaRodriguez"} tryLink={"https://sofiarodriguezpsicologa.netlify.app/"}> 
-                            <p>Recent website job for a Psychologist. I fully designed the web, created the logo and wrote the coded from scratch.</p>
-                            <p> I used Gatsby / React for the code structure, and Material Ui for the base of some of the styling components 
+                            <p>Recent website job for a Psychologist. I fully designed the web, created the logo and wrote the code from scratch.</p>
+                            <p> I used Gatsby / React framework, and Material Ui for the base of some of the styling components 
                                 (e.g. Containers, Grids, Cards, etc.). The CSS writting was done with SASS.</p>
                             <p> The email contact form was developed using emailJS and formkit, avoiding extra backend.</p>
                         </Card>

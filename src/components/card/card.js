@@ -37,7 +37,7 @@ const useStyles = makeStyles({
         filter:"none",
     }
     const imgOnClick = {
-        filter:"grayscale(100%) brightness(0.4) blur(3px)",
+        filter:"grayscale(100%) brightness(0.2) blur(3px)",
     }
 
     const textMain = {
@@ -45,7 +45,7 @@ const useStyles = makeStyles({
         paddingTop:"1.5rem"
     }
     const textOnClick = {
-        color:"#8DBE49",
+        color:"white",
         paddingTop:"1.5rem"
     }
     const [bolean, setBolean] = useState(true);
@@ -76,7 +76,7 @@ const useStyles = makeStyles({
             </div>
             <div className={cardStyles.buttons}> 
                 <button  className={cardStyles.infoIcon} onClick={()=>(handleOnClick())}> </button>
-                <a href={props.tryLink} target="blank"><Button fontSize="18px" padding="0.5rem 1.5rem" mainColor="#8DBE49" hoverColor="white" type="secondary"> Try it! </Button></a>
+                <a href={props.tryLink} target="blank"><Button fontSize="18px" padding="0.5rem 1.5rem" mainColor="#8DBE49" hoverColor="white" type="secondary"> Visit it! </Button></a>
                 <a href={props.gitLink} target="blank"> <div className={cardStyles.gitIcon} /> </a>
             </div>
         </CardContent>

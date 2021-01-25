@@ -15,6 +15,7 @@ import project2 from './images/project2.png';
 import project3 from './images/project3.png';
 import project4 from './images/project4.png';
 
+
 export default [{
     profile,
     iconHTML,
@@ -28,5 +29,6 @@ export default [{
     project1,
     project2,
     project3,
-    project4
+    project4,
+    
 }]
