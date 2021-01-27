@@ -8,7 +8,7 @@ const Projects = () => {
     return ( 
         <section id="projects" style={{minHeight:"100vh"}}>
             <Container>
-                <h1 style={{textAlign:"center", color:"#074b45"}}>PROJECTS</h1>
+                <h1 style={{textAlign:"center", color:"#074b45", paddingTop:"3rem"}}>PROJECTS</h1>
                 <Grid container spacing={4}>
                     <Grid item xs={12} sm={6}>
                         <Card imgId={"project1"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS, React, Gatsby"} title={"Psychologist web site"} 

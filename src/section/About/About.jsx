@@ -13,7 +13,7 @@ const About = () => {
     return ( 
         <section id="about" className={aboutStyles.about}>
             <Container>
-            <h1 style={{paddingTop:"2.5rem",textAlign:"center"}}>ABOUT ME</h1>
+            <h1 style={{paddingTop:"3rem",textAlign:"center"}}>ABOUT ME</h1>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={6}>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut unde a minima tenetur iste vero, necessitatibus corrupti 
