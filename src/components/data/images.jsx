@@ -10,7 +10,6 @@ import iconGatsby from './images/iconGatsby.png';
 import iconR from './images/iconR.png';
 import iconPython from './images/iconPython.png';
 
-import iconPython from './images/iconPython.png';
 /*
 import project1 from './images/project1.png';
 import project2 from './images/project2.png';
