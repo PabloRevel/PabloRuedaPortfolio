@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoBackground from "../../components/media/videoBackground";
-import indexStyles from "./index.module.scss";
+import indexStyles from "./Index.module.scss";
 import ImageExport from "./../../components/media/imageExport";
 import Button from "../../components/button/Button";
 
