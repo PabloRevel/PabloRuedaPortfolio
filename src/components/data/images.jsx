@@ -30,10 +30,6 @@ export default [{
     iconGatsby,
     iconR,
     iconPython,
-    project1,
-    project2,
-    project3,
-    project4,
     iconGit,
     iconLinkedIn,
     iconTwitter
