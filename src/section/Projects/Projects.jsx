@@ -11,7 +11,7 @@ const Projects = () => {
                 <h1 style={{textAlign:"center", color:"#074b45", paddingTop:"3rem"}}>PROJECTS</h1>
                 <Grid container spacing={4}>
                     <Grid item xs={12} sm={6}>
-                        <Card imgId={"project1"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS, React, Gatsby"} title={"Psychologist web site"} 
+                        <Card imgId={"profile"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS, React, Gatsby"} title={"Psychologist web site"} 
                         gitLink={"https://github.com/Pablo-Rueda/SofiaRodriguez"} tryLink={"https://sofiarodriguezpsicologa.netlify.app/"}> 
                             <p>Recent website job for a Psychologist. I fully designed the web, created the logo and wrote the code from scratch.</p>
                             <p> I used Gatsby / React framework, and Material Ui for the base of some of the styling components 
@@ -20,7 +20,7 @@ const Projects = () => {
                         </Card>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <Card imgId={"project2"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS"} title={"Apple website clone"}
+                        <Card imgId={"profile"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS"} title={"Apple website clone"}
                         gitLink={"https://github.com/Pablo-Rueda/appleclone"} tryLink={"https://pablo-rueda.github.io/appleclone/"}> 
                             <p>Practise Apple site (Uk November 2020) clone. I consider it as a great practise for responsive design 
                             with HTML5, CSS and SASS.</p>
@@ -31,14 +31,14 @@ const Projects = () => {
                 </Grid>
                 <Grid container spacing={4}>
                     <Grid item xs={12} sm={6}>
-                        <Card imgId={"project3"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS, React, Gatsby"} title={"Fitness React App"}
+                        <Card imgId={"profile"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS, React, Gatsby"} title={"Fitness React App"}
                         gitLink={"https://github.com/Pablo-Rueda/Fitness-plus"} tryLink={"https://5f7f90bac946db00ea33da57--fitness-plus.netlify.app/"}> 
                         <p>Fitness React web-app.</p>
                         <p> App created using React state and hooks, and SASS to compile the CSS.</p>
                         </Card>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <Card imgId={"project4"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS"} title={"Pacman"}
+                        <Card imgId={"profile"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS"} title={"Pacman"}
                         gitLink={"https://github.com/Pablo-Rueda/pacman"} tryLink={"https://pablo-rueda.github.io/pacman/"}> 
                             <p> This project demostrate a range of skills: DOM manipulation, JavaScript functions and object oriented programmin skills.</p> 
                             <p> The board was created as a numbers array, based 
