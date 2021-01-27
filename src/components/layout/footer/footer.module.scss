@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    height: 50px;
+    background-color:rgb(43, 43, 43);
+    justify-content: space-around;
+    
+    color: white;
+    .text{ 
+        padding-top: 12px;
+        font-size: 16px;
+    }
+}
+
+.link{
+    color:white;
+    border-bottom: 2px solid white;
+}
+
+.icons{
+    padding: 12.5px 0px;
+    a{
+        padding: 0 5px;
+    }
+}

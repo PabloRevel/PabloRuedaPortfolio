@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 
 const Index = () => {
     return ( 
-        <div>
+        <section id="main">
             <VideoBackground> 
                 <div className={indexStyles.content}>
                     <div>
@@ -31,7 +31,7 @@ const Index = () => {
                 </div>
             </VideoBackground>
             <div style={{height:"100vh"}}></div>
-        </div>
+        </section>
      );
 }
  

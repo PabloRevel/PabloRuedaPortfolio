@@ -7,7 +7,7 @@ const Contact = () => {
     return ( 
         <div className={contactStyles.divisor}>
             <div className={contactStyles.backgroundImage} />
-            <section className={contactStyles.container}>
+            <section id="contact" className={contactStyles.container}>
                 <Container>
                     <h1 style={{textAlign:"center"}}>CONTACT</h1>
                     <ContactForm />

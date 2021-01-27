@@ -15,6 +15,9 @@ import project2 from './images/project2.png';
 import project3 from './images/project3.png';
 import project4 from './images/project4.png';
 
+import iconGit from "./images/github-icon.svg";
+import iconLinkedIn from "./images/linkedin-icon.svg";
+import iconTwitter from "./images/twitter.svg";
 
 export default [{
     profile,
@@ -30,5 +33,7 @@ export default [{
     project2,
     project3,
     project4,
-    
+    iconGit,
+    iconLinkedIn,
+    iconTwitter
 }]

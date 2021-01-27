@@ -6,16 +6,18 @@ import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 
 import { PortfolioProvider } from "./../context/context";
-
+import Layout from "./../components/layout/layout"
 function App() {
 
 
   return (
       <PortfolioProvider>
-        <Index />
-        <About />
-        <Projects />
-        <Contact />
+        <Layout>
+          <Index />
+          <About />
+          <Projects />
+          <Contact />
+        </Layout>
       </PortfolioProvider>
   );
 }

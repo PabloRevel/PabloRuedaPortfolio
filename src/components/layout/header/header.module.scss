@@ -1,0 +1,21 @@
+.logo{
+    margin:10px;
+    height: 35px;
+    width: auto;
+}
+
+.navItem{
+    color:#8DBE49;
+    padding-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navItem:hover{
+    color:#074b45;
+}
+
+@media only screen and (max-width : 700px){
+    .navItem{
+        font-size: 16px;
+    }
+}
