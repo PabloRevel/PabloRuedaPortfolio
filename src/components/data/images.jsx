@@ -10,12 +10,12 @@ import iconGatsby from './images/iconGatsby.png';
 import iconR from './images/iconR.png';
 import iconPython from './images/iconPython.png';
 
-/*
-import project1 from './images/project1.png';
-import project2 from './images/project2.png';
-import project3 from './images/project3.png';
-import project4 from './images/project4.png';
-*/
+
+import projectOne from './images/projectOne.png';
+import projectTwo from './images/projectTwo.png';
+import projectThree from './images/projectThree.png';
+import projectFour from './images/projectFour.png';
+
 import iconGit from "./images/github-icon.svg";
 import iconLinkedIn from "./images/linkedin-icon.svg";
 import iconTwitter from "./images/twitter.svg";
@@ -32,5 +32,9 @@ export default [{
     iconPython,
     iconGit,
     iconLinkedIn,
-    iconTwitter
+    iconTwitter,
+    projectOne,
+    projectTwo,
+    projectThree,
+    projectFour
 }]
