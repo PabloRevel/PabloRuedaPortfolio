@@ -32,16 +32,21 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: "0px 0px 0px 0px white",
     });
     const [barColor, setBarColor] = useState({
-      background: 'transparent', margin: 0, boxShadow: "0px 0px 0px 0px black",
+      background: 'transparent', margin: 0, boxShadow: "0px 0px 0px 0px black", 
+    });
+    const [linkColor, setLinkColor] = useState({
+      color: 'white'
     });
     useScrollPosition(({ prevPos, currPos }) => {
         const shadow = -350 > currPos.y
         if(shadow){
             setShadowOnScroll({boxShadow: "0px 0px 3px 0.1px black"});
-            setBarColor({ background: 'white', margin: 0, boxShadow: "0px 0px 0px 0px black"});
+            setBarColor({ background: 'white', margin: 0, boxShadow: "0px 0px 0px 0px black", transition:"1s"});
+            setLinkColor({transition:"0.5s"})
         }else{
             setShadowOnScroll({boxShadow: "0px 0px 0px 0px white"});
-            setBarColor({ background: 'transparent', margin: 0, boxShadow: "0px 0px 0px 0px black"});
+            setBarColor({ background: 'transparent', margin: 0, boxShadow: "0px 0px 0px 0px black", transition:"1s"});
+            setLinkColor({color: 'white', transition:"1s"})
         }
       })
   
@@ -49,10 +54,10 @@ const useStyles = makeStyles((theme) => ({
         <AppBar  position="fixed" className={classes.root} style={barColor}>
           <Toolbar className={classes.customizeToolbar} style={shadowOnScroll}>
             <Grid container direction="row" justify="flex-end" alignItems="center">
-              <Link className={headerStyles.navItem} smooth duration={1000} to="main">Main</Link>
-              <Link className={headerStyles.navItem} smooth duration={1000} to="about">About Me</Link>
-              <Link className={headerStyles.navItem} smooth duration={1000} to="projects">Projects</Link>
-              <Link className={headerStyles.navItem} smooth duration={1000} to="contact">Contact</Link>
+              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="main">Principal</Link>
+              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="about">Sobre mí</Link>
+              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="projects">Proyectos</Link>
+              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="contact">Contacto</Link>
             </Grid>
           </Toolbar>
         </AppBar>

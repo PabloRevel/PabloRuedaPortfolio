@@ -1,85 +1,22 @@
-import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Pablo Rueda | Frontend Developer', // e.g: 'Name | Developer'
-  lang: 'en', // e.g: en, es, fr, jp
-  description: 'Pablo Rueda Portfolio. Frontend developer, Web development projects. HTML, CSS, SASS, JS, React and Gatsby.', // e.g: Welcome to my website
+  title: 'Pablo Rueda | Front-end Developer',
+  lang: 'en', 
+  description: ' Desarrollador front-end en Andalucia, España. Abierto a colaboraciones y proyectos. ¡Si necesitas un sitio web no dudes en contactarme! ', 
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: 'PABLO RUEDA',
-  subtitle: 'Web Developer',
-  cta: '',
-  img: 'profile.jpg',
+  sectionTitle: "MAIN",
+  name: 'Pablo Rueda',
+  subtitle: 'Desarrollador Front-end',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '.',
-  paragraphTwo: '',
+  sectionTitle: "SOBRE MI",
+  paragraphOne: " Hola! Soy Pablo, desarrollador front-end. Aprendí de programación (con Python y R) mientras realizaba mi master en estadística. De ahí, comencé a aprender desarrollo web por afición y me quedé por pasión. A día de hoy me gustaría hacer de esta pasión un trabajo.",
+  paragraphTwo: " Principalmente, uso HTML, CSS y Javascript. Para la maquetación me apoyo en SASS y para estructurar los proyectos me gusta el framework de React con Gatsby. Para estilo uso Materialize y Material UI principalmente. Finalemnte, para control de versión uso Git, aunque durante mi tiempo de trabajo usé Tortoise SVN.",
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
-};
-
-// PROJECTS DATA
-export const projectsData = [
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-];
-
-// CONTACT DATA
-export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
-};
-
-// FOOTER DATA
-export const footerData = {
-  networks: [
-    {
-      id: nanoid(),
-      name: 'linkedin',
-      url: 'https://www.linkedin.com/in/pabloruedas/en',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: 'https://github.com/Pablo-Rueda',
-    },
-  ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

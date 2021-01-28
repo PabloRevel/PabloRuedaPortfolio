@@ -76,7 +76,7 @@ const useStyles = makeStyles({
             </div>
             <div className={cardStyles.buttons}> 
                 <button  className={cardStyles.infoIcon} onClick={()=>(handleOnClick())}> </button>
-                <a href={props.tryLink} target="blank"><Button fontSize="18px" padding="0.5rem 1.5rem" mainColor="#8DBE49" hoverColor="white" type="secondary"> Visit it! </Button></a>
+                <a href={props.tryLink} target="blank"><Button fontSize="18px" padding="0.5rem 1.5rem" mainColor="#8DBE49" hoverColor="white" type="secondary"> ¡Pruébalo! </Button></a>
                 <a href={props.gitLink} target="blank"> <div className={cardStyles.gitIcon} /> </a>
             </div>
         </CardContent>

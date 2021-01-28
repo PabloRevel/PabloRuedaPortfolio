@@ -20,6 +20,10 @@ import iconGit from "./images/github-icon.svg";
 import iconLinkedIn from "./images/linkedin-icon.svg";
 import iconTwitter from "./images/twitter.svg";
 
+import gitLogo from "./images/git-icon.svg";
+import materializeLogo from "./images/materializecss.svg";
+import materialUiLogo from "./images/material-ui.svg";
+
 export default [{
     profile,
     iconHTML,
@@ -36,5 +40,8 @@ export default [{
     projectOne,
     projectTwo,
     projectThree,
-    projectFour
+    projectFour,
+    gitLogo,
+    materializeLogo,
+    materialUiLogo
 }]

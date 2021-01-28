@@ -41,7 +41,7 @@ const ContactForm = () => {
             {formik => { 
                 return(
                     <Form className={contactStyle.form}>
-                    <Field className={contactStyle.field} placeholder="Name" 
+                    <Field className={contactStyle.field} placeholder="Nombre" 
                         type="text" id="name" name="name" 
                             /*
                             Reduce with formik the form schema:
@@ -65,7 +65,7 @@ const ContactForm = () => {
                             type="email" id="email" name="email" />
                     <ErrorMessage name="email" className={contactStyle.error} />
                         
-                    <Field as="textarea" placeholder="How can I help you?"  
+                    <Field as="textarea" placeholder="¿Cómo puedo ayudarte?"  
                         type="text" id="description" name="description"
                         className={contactStyle.field} style={{height:"150px"}} />
                     <div style={{display:"flex",justifyContent:"center"}}>

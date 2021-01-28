@@ -9,7 +9,7 @@ const Contact = () => {
             <div className={contactStyles.backgroundImage} />
             <section id="contact" className={contactStyles.container}>
                 <Container>
-                    <h1 style={{textAlign:"center"}}>CONTACT</h1>
+                    <h1 style={{textAlign:"center"}}>CONTACTO</h1>
                     <ContactForm />
                 </Container>
             </section>
