@@ -24,17 +24,17 @@ const Button = (props) => {
   const [style, setStyle] = useState(main);
 
     return (props.type==="secondary") ? (
-        <p className={`${buttonStyles.btn} ${buttonStyles.btnSecondary}`} style={style}            
+        <button className={`${buttonStyles.btn} ${buttonStyles.btnSecondary}`} style={style}            
           onMouseEnter={()=>setStyle(hover)} 
           onMouseLeave={()=>setStyle(main)}>    
               {props.children}
-        </p>
+        </button>
     ):(
-        <p className={`${buttonStyles.btn} ${buttonStyles.btnMain}`} style={style}            
+        <button className={`${buttonStyles.btn} ${buttonStyles.btnMain}`} style={style}            
           onMouseEnter={()=>setStyle(hover)} 
           onMouseLeave={()=>setStyle(main)}>    
               {props.children}
-        </p>
+        </button>
       );
 }
  

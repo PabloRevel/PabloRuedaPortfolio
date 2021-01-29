@@ -33,7 +33,9 @@ $hover-color:  white;
     }
   }
 }
-
+.btn:focus{
+  outline: none;
+}
 /* Btn Style */
 .btnMain {
   &::after {
