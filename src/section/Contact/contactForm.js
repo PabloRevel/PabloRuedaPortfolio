@@ -16,9 +16,9 @@ const onSubmit =  (values,onSubmitProps) => {
     console.log("form data", values)
     console.log("submit props", onSubmitProps)
 
-    let serviceID = process.env.SERVICE_ID
-    let templateID = process.env.TEMPLATE_ID;
-    let userID = process.env.USER_ID;
+    let serviceID = process.env.GATSBY_SERVICE_ID
+    let templateID = process.env.GATSBY_TEMPLATE_ID;
+    let userID = process.env.GATSBY_USER_ID;
     emailjs.send(serviceID,templateID,values,userID) ;
 
     onSubmitProps.resetForm(); // clean form
@@ -49,8 +49,8 @@ const ContactForm = () => {
                             type="email" id="email" name="email" />
                     <ErrorMessage name="email" className={contactStyle.error} />
                         
-                    <Field as="textarea" placeholder="Motivo de consulta"  
-                        type="text" id="description" name="description" row="40"
+                    <Field as="textarea" placeholder="How can I help you? | ¿Cómo puedo ayudarte?"  
+                        type="text" id="description" name="description" style={{height:"150px"}}
                         className={contactStyle.field} />
                     <div style={{display:"flex",justifyContent:"center"}}>
                         <Btn mainColor="#8DBE49" hoverText="#FFFFFF" > Enviar</Btn>
