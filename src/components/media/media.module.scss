@@ -13,8 +13,13 @@
   width: 100vw;
   height: 100vh;
   
-  &, video, .viewportHeader {
+  &, video, .tiny ,.viewportHeader {
     @include coverer;
+  }
+  .tiny{
+    filter: blur(5px);
+  transform: scale(1);
+  transition: visibility 0ms ease 400ms;
   }
   video {
     background: black;
@@ -27,7 +32,7 @@
     opacity: 1;
     opacity: var(--headerOpacity);
     transform: scale(var(--headerScale));
-
+    transition: opacity 400ms ease 0ms;
   }
 }
 
