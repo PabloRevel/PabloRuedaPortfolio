@@ -1,5 +1,6 @@
 import React from 'react'
 import contactStyle from "./contact.module.scss"
+import { FormattedMessage,useIntl } from "gatsby-plugin-intl"; //language
 
 import Btn from "./../../components/button/Button"
 
@@ -31,6 +32,7 @@ const validationSchema = Yup.object({
 })
 
 const ContactForm = () => {
+    const intl = useIntl()
 
     return ( 
         <Formik
@@ -40,7 +42,7 @@ const ContactForm = () => {
             {formik => { 
                 return(
                     <Form className={contactStyle.form}>
-                    <Field className={contactStyle.field} placeholder="Nombre" 
+                    <Field className={contactStyle.field} placeholder={intl.formatMessage({ id: "contact.name" })}
                         type="text" id="name" name="name" />
 
                     <ErrorMessage name="name" style={{color:"red"}}/>
@@ -49,11 +51,11 @@ const ContactForm = () => {
                             type="email" id="email" name="email" />
                     <ErrorMessage name="email" className={contactStyle.error} />
                         
-                    <Field as="textarea" placeholder="How can I help you? | ¿Cómo puedo ayudarte?"  
+                    <Field as="textarea" placeholder={intl.formatMessage({ id: "contact.description" })}
                         type="text" id="description" name="description" style={{height:"150px"}}
                         className={contactStyle.field} />
                     <div style={{display:"flex",justifyContent:"center"}}>
-                        <Btn mainColor="#8DBE49" hoverText="#FFFFFF" > Enviar</Btn>
+                        <Btn mainColor="#8DBE49" hoverText="#FFFFFF" > <FormattedMessage id="contact.button"/></Btn>
                     </div>
                     
                 </Form>

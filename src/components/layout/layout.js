@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { injectIntl } from "gatsby-plugin-intl"; //language
+
+
+
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 // Components:
@@ -33,4 +37,4 @@ const Layout = (props) => {
      );
 }
  
-export default Layout;
+export default injectIntl(Layout);

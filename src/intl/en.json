@@ -1,0 +1,51 @@
+{
+    "title": "Pablo Rueda - Frontend developer",
+    "description": "Front-end developer in Andalucia, Spain. Open for new projects, collaborations or freelance projects.",
+    "author": "Pablo Rueda",
+    "nav": {
+      "main": "Main",
+      "about": "About me",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "hero": {
+      "tittle": "Frontend Developer",
+      "button": "Know more"
+    },
+    "about": {
+      "title": "ABOUT ME",
+      "resume": "ResumeEn",
+      "button": "Resume",
+      "pharagraphOne": "Hi! I'm Pablo Rueda, a frontend developer full of energy and passion for the tech industry.",
+      "pharagraphTwo": "I got in love with coding thanks to R and Python (I come from a MSc in Statistics), but nowadays I'm more engaged with frontend stack. Mainly, I use HTML, CSS and Javascript. But I use some frameworks to support my work, as SASS, React / Gatsby, Materialize and Material UI. For version control y use Git, but I have knoweldge of Tortoise SVN.",
+      "pharagraphThree": "If you have a web project or are interested on my profile for any project, don't hesitate in contact me!"
+    },
+
+    "projects": {
+      "title": "PROJECTS",
+      "button": "Try it!",
+      "projectOne": {
+        "phOne": "Freelance website project. Developed from scratch using figma for the design and Inkscape for the logo. ",
+        "phTwo": "The project was developed with React / Gatsby, using SASS to compile CSS and some Material UI components as a baseline."
+      },
+      "projectTwo": {
+        "phOne": "Apple website clone (November 2020, UK) created to practise my skills with HTML5, CSS, SASS and vanilla Javascript. In general, I consider it as a good example of my skills to follow strict design lines.",
+        "phTwo": "I had to use Javascript for: the blurr of the navbar, the shopping button and the menu hamburguer button in the mobile version."
+      },
+      "projectThree": {
+        "phOne": "First full react App I created. It implements React state and hooks to manage the information throught the pages. It uses SASS to compile CSS.",
+        "phTwo": " "
+      },
+      "projectFour": {
+        "phOne": "Full pacman project implementing my Object Oriented Programming and DOM manipulation knowledge to create a Pacman game.",
+        "phTwo": "The project uses mainly vanilla javascript. The board is based on a numbers array and a function to convert each number in a div cell (so the board is easily modificable). Ghosts and Pacman are created from the same Creature prototype, but with different methods to define the movement (in ghosts, the movement is random)."
+      }
+    },
+    "contact": {
+      "title": "CONTACT",
+      "button": "Send",
+      "name": "Name",
+      "description": "How can I help you?"
+    }
+  }
+  

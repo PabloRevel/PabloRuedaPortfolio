@@ -1,0 +1,51 @@
+{
+    "title": "Pablo Rueda - Frontend developer",
+    "description": "Desarrollador frontend en Andalucia, España. Si necesitas una web propia, tienes un proyecto en mente o sencillamente buscas una colaboración, no dudes en contactarme.",
+    "author": "Pablo Rueda",
+    "nav": {
+      "main": "Inicio",
+      "about": "Sobre mi",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "tittle": "Desarrollador Frontend",
+      "button": "Conóceme"
+    },
+    "about": {
+      "title": "SOBRE MI",
+      "resume": "ResumeEs",
+      "button": "Currículum",
+      "pharagraphOne": "¡Hola! Soy Pablo Rueda, un desarrollador frontend lleno de energía y apasionado por la industria tecnológica.",
+      "pharagraphTwo": " Me enamoré del campo de la programación gracias a R y Python (aprendidos en mi máster en estadística), aunque en la actualidad uso más herramientas de frontend. Principalmente, uso HTML, CSS y Javascript; pero también me apoyo en distintos frameworks y librerías como SASS, React / Gatsby, Materialize y Material UI. Para control de versión uso Git, aunque también he usado Tortoise SVN.",
+      "pharagraphThree": " Si necesitas una web o estás interesado en mí para un proyecto de desarrollo, ¡no dudes en contactarme!"
+    },
+
+    "projects": {
+      "title": "PROYECTOS",
+      "button": "¡Pruébalo!",
+      "projectOne": {
+        "phOne": "Web que desarrollé como autónomo. Me apoyé en Figma para el diseño, usé Inkscape para el logo.",
+        "phTwo": " El proyecto fué desarrollado empleando React / Gatsby, apoyandome en SASS para la escritura de CSS y Material UI como base para los componentes ."
+      },
+      "projectTwo": {
+        "phOne": "Copia del sitio web de Apple (UK, Noviembre 2020) creada para practicar mis habilidades con HTML5, CSS, SASS y javascript vanilla. En general, considero el proyecto un buen ejemplo de mi habilidad para seguir diseños específicos.",
+        "phTwo": " Empleé javascript para: el diseño borroso de la barra de navegación, el menú de compra y el menú desplegable en móbil."
+      },
+      "projectThree": {
+        "phOne": " Primer proyecto de app completa con React. Emplea el manejo de estado de React y hooks para paso de información a través de las páginas. Utiliza SASS para compilar el CSS.",
+        "phTwo": " "
+      },
+      "projectFour": {
+        "phOne": " Juego de Pacman implementando mis conocimientos de Programación Orientada a Objetos y de manejo del entorno con Javascript vanilla.",
+        "phTwo": "El tablero se base en un array de números, empleando una función para convertir los números en divs de celdas. Los fantasmas y pacman se basan en el mismo prototipo Creature, pero implementando diferentes métodos para el movimiento (aleatorio, en el caso de los fantasmas)."
+      }
+    },
+    "contact": {
+      "title": "CONTACTO",
+      "button": "Enviar",
+      "name": "Nombre",
+      "description": "¿Cómo puedo ayudarte?"
+    }
+  }
+  

@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { FormattedMessage } from "gatsby-plugin-intl"; //language
 
 // components
 import VideoBackground from "../../components/media/videoBackground";
@@ -8,13 +9,7 @@ import Button from "../../components/button/Button";
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 
-// context
-import PortfolioContext from '../../context/context';
-
 const Index = () => {
-    const { hero } = useContext(PortfolioContext);
-    const { name, subtitle } = hero;
-  
     return ( 
         <section id="main">
             <VideoBackground> 
@@ -29,11 +24,11 @@ const Index = () => {
                         />
                     </Fade>
     
-                    <h1>{name}</h1>
-                    <h3>{subtitle}</h3>
+                    <h1><FormattedMessage id="author" /></h1>
+                    <h3><FormattedMessage id="hero.tittle" /></h3>
                     <div className={indexStyles.buttons}>
                     <Link to="about" smooth duration={1000}>
-                        <Button mainColor="#8DBE49">Conóceme</Button>
+                        <Button mainColor="#8DBE49"><FormattedMessage id="hero.button" /></Button>
                     </Link>       
                     </div>
                 </div>

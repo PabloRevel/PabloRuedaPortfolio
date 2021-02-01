@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { FormattedMessage, injectIntl,IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"; //language
 
 // Style & Structure: 
 import { makeStyles } from '@material-ui/core/styles';
@@ -25,8 +26,11 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
   
-  export default function ButtonAppBar() {
-  
+  export default injectIntl(function ButtonAppBar() {
+    const languageName = {
+      en: "EN",
+      es: "ES",
+    }
     const classes = useStyles();
     const [shadowOnScroll, setShadowOnScroll] = useState({
       boxShadow: "0px 0px 0px 0px white",
@@ -54,12 +58,32 @@ const useStyles = makeStyles((theme) => ({
         <AppBar  position="fixed" className={classes.root} style={barColor}>
           <Toolbar className={classes.customizeToolbar} style={shadowOnScroll}>
             <Grid container direction="row" justify="flex-end" alignItems="center">
-              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="main">Principal</Link>
-              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="about">Sobre mí</Link>
-              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="projects">Proyectos</Link>
-              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="contact">Contacto</Link>
+              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="main"><FormattedMessage id="nav.main" /></Link>
+              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="about"><FormattedMessage id="nav.about" /></Link>
+              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="projects"><FormattedMessage id="nav.projects" /></Link>
+              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="contact"><FormattedMessage id="nav.contact" /></Link>
+              <div> 
+                <div style={{display:"flex"}}>
+                  <IntlContextConsumer>
+                    {({ languages, language: currentLocale }) =>
+                      languages.map(language => (
+                        <div className="lang" key={language}>
+                          <button
+                            onClick={() => changeLocale(language)}
+                            className={headerStyles.navItem}
+                            style={linkColor}
+                          >
+                            {languageName[language]}
+                          </button>
+
+                        </div>
+                      ))
+                    }
+                  </IntlContextConsumer>
+                </div>
+              </div>
             </Grid>
           </Toolbar>
         </AppBar>
     );
-  }
+  })

@@ -1,41 +1,41 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { FormattedMessage,useIntl } from "gatsby-plugin-intl"; //language
 
-import Resume from './PabloRuedaResume.pdf';
-
+import ResumeEn from "./PabloRuedaResumeEn.pdf"
+import ResumeEs from "./PabloRuedaResumeEs.pdf"
 //components
+import Button from "./../../components/button/Button"
+
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { Card } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 import Rotate from 'react-reveal/Rotate';
-import Button from "../../components/button/Button"
 import ImageExport from "./../../components/media/imageExport"
 import aboutStyles from "./about.module.scss";
 
-
-//content:
-import PortfolioContext from '../../context/context';
-
-
 const About = () => {
-    const { about } = useContext(PortfolioContext);
-    const { paragraphOne, paragraphTwo, sectionTitle } = about;
+    const intl = useIntl()
+
     return ( 
         <section id="about" className={aboutStyles.about}>
             <Container>
-            <h1 style={{paddingTop:"3rem",textAlign:"center"}}>{sectionTitle} </h1>
+            <h1 style={{paddingTop:"3rem",textAlign:"center"}}> <FormattedMessage id="about.title" /> </h1>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={6}>
-                    <p> {paragraphOne} </p>
-                    <p> {paragraphTwo} </p>                    
+                    <p> <FormattedMessage id="about.pharagraphOne" /> </p>
+                    <p> <FormattedMessage id="about.pharagraphTwo" /> </p>                    
+                    <p> <FormattedMessage id="about.pharagraphThree" /> </p>                    
                     <div className={aboutStyles.button}>
-                        <a href={Resume} rel="noreferrer" target="_blank">
-                            <Button padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49">Descargar CV</Button>
-                        </a>
+                    <a href={ (intl.formatMessage({ id: "about.resume" })==="ResumeEn") ? ResumeEn : ResumeEs }
+                        rel="noreferrer" 
+                        target="_blank">
+                        <Button padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49"><FormattedMessage id="about.button" /></Button>
+                    </a>
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={6} style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
-                <Rotate bottom right duration={2000} delay={1000} >
+                <Rotate bottom right duration={1250} delay={500} >
 
                    <Box boxShadow={3}><Card style={{width:"100%", padding:"15px"}}>
                         <Grid container spacing={1} alignItems="center" >

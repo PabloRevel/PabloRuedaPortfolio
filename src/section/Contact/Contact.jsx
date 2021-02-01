@@ -1,4 +1,6 @@
 import React from 'react';
+import { FormattedMessage } from "gatsby-plugin-intl"; //language
+
 import contactStyles from "./contact.module.scss";
 import Container from '@material-ui/core/Container';
 import ContactForm from "./contactForm"
@@ -9,7 +11,7 @@ const Contact = () => {
             <div className={contactStyles.backgroundImage} />
             <section id="contact" className={contactStyles.container}>
                 <Container>
-                    <h1 style={{textAlign:"center"}}>CONTACTO</h1>
+                    <h1 style={{textAlign:"center"}}><FormattedMessage id="contact.title"/></h1>
                     <ContactForm />
                 </Container>
             </section>
