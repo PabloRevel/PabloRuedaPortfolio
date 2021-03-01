@@ -1,0 +1,230 @@
+.card {
+  background-color: #f7f5f5;
+  min-height: 460px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .card {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .card {
+    min-height: 550px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .card {
+    min-height: 630px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .card {
+    min-height: 650px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    min-height: 580px;
+  }
+}
+
+.image {
+  height: 300px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 1250px) {
+  .image {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .image {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .image {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .image {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .image {
+    min-height: 450px;
+  }
+}
+
+div.text {
+  position: absolute;
+  text-align: justify;
+  padding: 0 auto;
+  width: 600px;
+  z-index: 99;
+  font-size: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: default;
+}
+
+div.text p {
+  padding: 4px 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1250px) {
+  div.text {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  div.text {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  div.text {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  div.text {
+    width: 290px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.text {
+    width: 90%;
+    font-size: 24px;
+  }
+}
+
+.content {
+  text-align: center;
+  padding: 0px 5%;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
+  line-height: 140%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content h3 {
+  padding: 5px;
+  color: #074b45;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 675px) {
+  .content {
+    width: 100%;
+  }
+}
+
+.buttons {
+  margin: 0;
+  padding-top: 0.75rem;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.75rem;
+  height: 100%;
+  padding: auto 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttons {
+    padding-top: 0.25rem;
+  }
+}
+
+.gitIcon {
+  height: 35px;
+  width: 40px;
+  padding: 0 40px;
+  background-image: url(./gitMain.svg);
+  background-attachment: local;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gitIcon:hover {
+  height: 35px;
+  width: 40px;
+  padding: 0 40px;
+  background-image: url(./gitHover.svg);
+  background-attachment: local;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infoIcon {
+  border: none;
+  background-color: transparent;
+  height: 35px;
+  width: 40px;
+  padding: 0 40px;
+  background-image: url(./infoMain.svg);
+  background-attachment: local;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infoIcon:active, .infoIcon:focus {
+  border: none;
+  outline: none;
+}
+
+.infoIcon:hover {
+  height: 35px;
+  width: 40px;
+  padding: 0 40px;
+  background-image: url(./infoHover.svg);
+  background-attachment: local;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=card.module.css.map */

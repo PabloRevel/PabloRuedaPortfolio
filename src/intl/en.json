@@ -39,6 +39,10 @@
       "projectFour": {
         "phOne": "Full pacman project implementing my Object Oriented Programming and DOM manipulation knowledge to create a Pacman game.",
         "phTwo": "The project uses mainly vanilla javascript. The board is based on a numbers array and a function to convert each number in a div cell (so the board is easily modificable). Ghosts and Pacman are created from the same Creature prototype, but with different methods to define the movement (in ghosts, the movement is random)."
+      },
+      "projectFive": {
+        "phOne": " Personal version of Conyway's Game of Life. After creating an small Pacman project, I realised that small mini-games are a good way of testing and increasing my skills.",
+        "phTwo": " In this project, I wanted to test my skills with React context and hooks for state management, while creating meaningfull components (board-cells, header and the instructions)."
       }
     },
     "contact": {

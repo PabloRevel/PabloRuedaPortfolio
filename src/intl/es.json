@@ -39,6 +39,10 @@
       "projectFour": {
         "phOne": " Juego de Pacman implementando mis conocimientos de Programación Orientada a Objetos y de manejo del entorno con Javascript vanilla.",
         "phTwo": "El tablero se base en un array de números, empleando una función para convertir los números en divs de celdas. Los fantasmas y pacman se basan en el mismo prototipo Creature, pero implementando diferentes métodos para el movimiento (aleatorio, en el caso de los fantasmas)."
+      },
+      "projectFive": {
+        "phOne": " Versión propia del Juego de la Vida de Conyway. Tras mi pequeño Pacman, sentí que hacer mini-juegos era una buena forma de poner a prueba mis habilidades y mejorar.",
+        "phTwo": " En este proyecto, pruebo mi habilidad gestionando el estado de React con Context y Hooks, mientras creo componentes que tengan sentido práctico para el proyecto (tablero-celdas, cabecera e instrucciones)."
       }
     },
     "contact": {

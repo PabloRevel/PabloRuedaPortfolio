@@ -29,10 +29,13 @@ const Projects = () => {
                 </Grid>
                 <Grid container spacing={4}>
                     <Grid item xs={12} sm={6}>
-                        <Card imgId={"projectThree"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS, React, Gatsby"} title={"Fitness React App"}
-                        gitLink={"https://github.com/Pablo-Rueda/Fitness-plus"} tryLink={"https://5f7f90bac946db00ea33da57--fitness-plus.netlify.app/"}> 
-                            <p> <FormattedMessage id="projects.projectThree.phOne" /> </p>
-                            <p> <FormattedMessage id="projects.projectThree.phTwo" /> </p>
+                        <Card imgId={"projectFive"} color={"#06DDDD"} tech={"HTML, CSS, JS, React"} title={"Game of Life"}
+                        gitLink={"https://github.com/Pablo-Rueda/CGL"} tryLink={"https://conway-gameoflife.netlify.app/"}> 
+                            <p> <FormattedMessage id="projects.projectFive.phOne" 
+                            defaultMessage="Personal version of Conyway's Game of Life. After creating an small Pacman project, I realised that small mini-games are a good way of testing and increasing my skills."  /> </p>
+
+                            <p> <FormattedMessage id="projects.projectFive.phTwo" 
+                            defaultMessage="In this project, I wanted to test my skills with React context and hooks for state management, while creating meaningfull components (board-cells, header and the instructions)." /> </p>
                         </Card>
                     </Grid>
                     <Grid item xs={12} sm={6}>
@@ -43,7 +46,18 @@ const Projects = () => {
                         </Card>
                     </Grid>
                 </Grid>
-                
+                <Grid container spacing={4}>
+                    <Grid item xs={12} sm={6}>
+                        <Card imgId={"projectThree"} color={"#06DDDD"} tech={"HTML, CSS, SASS, JS, React"} title={"Fitness React App"}
+                        gitLink={"https://github.com/Pablo-Rueda/Fitness-plus"} tryLink={"https://5f7f90bac946db00ea33da57--fitness-plus.netlify.app/"}> 
+                            <p> <FormattedMessage id="projects.projectThree.phOne" /> </p>
+                            <p> <FormattedMessage id="projects.projectThree.phTwo" /> </p>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+
+                    </Grid>
+                </Grid>
             </Container>
         </section>
      );

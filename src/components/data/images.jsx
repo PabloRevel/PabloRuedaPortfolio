@@ -15,6 +15,7 @@ import projectOne from './images/projectOne.png';
 import projectTwo from './images/projectTwo.png';
 import projectThree from './images/projectThree.png';
 import projectFour from './images/projectFour.png';
+import projectFive from './images/projectFive.png';
 
 import iconGit from "./images/github-icon.svg";
 import iconLinkedIn from "./images/linkedin-icon.svg";
@@ -41,6 +42,7 @@ export default [{
     projectTwo,
     projectThree,
     projectFour,
+    projectFive,
     gitLogo,
     materializeLogo,
     materialUiLogo
