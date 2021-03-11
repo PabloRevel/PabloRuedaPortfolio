@@ -4,7 +4,7 @@ import { FormattedMessage } from "gatsby-plugin-intl"; //language
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
-import Card from "./../../components/card/card"
+import Card from "../../components/Card/Card"
 
 const Projects = () => {
     return ( 

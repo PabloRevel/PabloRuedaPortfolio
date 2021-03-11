@@ -2,7 +2,7 @@ import React from 'react'
 import contactStyle from "./contact.module.scss"
 import { FormattedMessage,useIntl } from "gatsby-plugin-intl"; //language
 
-import Btn from "./../../components/button/Button"
+import Btn from "../../components/Button/Button"
 
 import { Formik, Form, Field, ErrorMessage } from 'formik'; // simplify forms
 import * as Yup from 'yup'; // simplify information

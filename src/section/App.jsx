@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Index from "./Index/Index";
+import Main from "./Main/Main";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
@@ -13,7 +13,7 @@ function App() {
   return (
       <PortfolioProvider>
         <Layout>
-          <Index />
+          <Main />
           <About />
           <Projects />
           <Contact />

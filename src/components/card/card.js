@@ -4,14 +4,14 @@ import { FormattedMessage } from "gatsby-plugin-intl"; //language
 // Style:
 import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import cardStyles from "./card.module.scss";
-import images from "./../data/images";
+import images from "../../images";
 import Container from '@material-ui/core/Container';
 
 // Components:
 import CardMedia from '@material-ui/core/CardMedia';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import Button from "./../button/Button"
+import Button from "../Button/Button"
 
 const theme = createMuiTheme({
     typography: {

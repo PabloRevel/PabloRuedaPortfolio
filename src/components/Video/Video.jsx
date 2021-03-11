@@ -1,7 +1,7 @@
 import React from 'react';
-import mediaStyles from "./media.module.scss";
+import videoStyles from "./video.module.scss";
 
-const VideoBackground = (props) => {
+const Video = (props) => {
     const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
     const onLoadedData = () => {
         setIsVideoLoaded(true);
@@ -9,10 +9,10 @@ const VideoBackground = (props) => {
 
     return ( 
         
-        <header className={mediaStyles.videoHeader}>
+        <header className={videoStyles.videoHeader}>
             <img
-                className={mediaStyles.tiny}
-                src={require("./video/loadingVideo.png")}
+                className={videoStyles.tiny}
+                src={require("./loadingVideo.png")}
                 alt="thumb"
                 style={{ opacity: isVideoLoaded ? 0 : 1 }}
             />
@@ -21,15 +21,15 @@ const VideoBackground = (props) => {
                 style={{ opacity: isVideoLoaded ? 1 : 0 }}
             >
                 <source
-                src={require("./video/video.mp4")}
+                src={require("./video.mp4")}
                 type="video/mp4"
                 />
             </video>
-            <div className={mediaStyles.viewportHeader}>
+            <div className={videoStyles.viewportHeader}>
                     {props.children}
             </div>
         </header>
      );
 }
  
-export default VideoBackground;
+export default Video;

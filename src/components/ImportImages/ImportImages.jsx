@@ -1,7 +1,7 @@
 import React from 'react';
-import images from "../data/images"
+import images from "../../images"
 
-const imageExport = (props) => {
+const ImportImages = (props) => {
     const style = {
         top: props.height ||"0px",
         padding: "0px", margin:"0px",
@@ -16,4 +16,4 @@ const imageExport = (props) => {
     );
 }
  
-export default imageExport;
+export default ImportImages;

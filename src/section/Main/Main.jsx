@@ -2,18 +2,17 @@ import React from 'react';
 import { FormattedMessage } from "gatsby-plugin-intl"; //language
 
 // components
-import VideoBackground from "../../components/media/videoBackground";
-import indexStyles from "./Index.module.scss";
-import ImageExport from "./../../components/media/imageExport";
-import Button from "../../components/button/Button";
+import {Video, Button} from "../../components"
+import mainStyles from "./Main.module.scss";
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 
-const Index = () => {
+const Main = () => {
     return ( 
         <section id="main">
-            <VideoBackground> 
-                <div className={indexStyles.content}>
+            <Video> 
+                <div className={mainStyles.content}>
+                {/* 
                     <Fade top duration={1000} delay={500} distance="30px">
                         <ImageExport 
                             heigth="250px" 
@@ -23,19 +22,19 @@ const Index = () => {
                             imgId={"profile" }
                         />
                     </Fade>
-    
+                */}
                     <h1><FormattedMessage id="author" /></h1>
                     <h3><FormattedMessage id="hero.tittle" /></h3>
-                    <div className={indexStyles.buttons}>
+                    <div className={mainStyles.buttons}>
                     <Link to="about" smooth duration={1000}>
                         <Button mainColor="#8DBE49"><FormattedMessage id="hero.button" /></Button>
                     </Link>       
                     </div>
                 </div>
-            </VideoBackground>
+            </Video>
             <div style={{height:"100vh"}}></div>
         </section>
      );
 }
  
-export default Index;
+export default Main;

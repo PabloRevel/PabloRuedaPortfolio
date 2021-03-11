@@ -35,9 +35,9 @@
 
 .about {
   
-  background-color: #074b45;
+  background-color: #cdecec;
 
-  color: white;
+  color: black;
   height: 100%;
   border-top: 3px solid #021816;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -116,5 +116,12 @@
   display:flex;
   @include respond(phone) {
     justify-content: center;
+  }
+}
+
+.rightDiv{
+  @include respond(phone) {
+    h1{text-align: center;}
+    text-align: justify;
   }
 }
