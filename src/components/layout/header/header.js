@@ -60,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
             <Grid container direction="row" justify="flex-end" alignItems="center">
               <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="main"><FormattedMessage id="nav.main" /></Link>
               <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="about"><FormattedMessage id="nav.about" /></Link>
+              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="skills">skill</Link>
               <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="projects"><FormattedMessage id="nav.projects" /></Link>
               <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="contact"><FormattedMessage id="nav.contact" /></Link>
               <div> 

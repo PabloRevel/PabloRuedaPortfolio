@@ -4,7 +4,6 @@ import { FormattedMessage } from "gatsby-plugin-intl"; //language
 // components
 import {Video, Button} from "../../components"
 import mainStyles from "./Main.module.scss";
-import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 
 const Main = () => {
