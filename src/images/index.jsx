@@ -25,6 +25,9 @@ import projectGameOfLife from './images/projectGameOfLife.png';
 import projectPacman from './images/projectPacman.png';
 import projectPandemic from './images/projectPandemic.png';
 import projectPortfolio from './images/projectPortfolio.png';
+import projectClientGif from './images/projectClientGif.gif';
+import projectGameOfLifetGif from './images/projectGameOfLifetGif.gif';
+import projectpPandemictGif from './images/projectpPandemictGif.gif';
 
 import iconGit from "./images/github-icon.svg";
 import iconLinkedIn from "./images/linkedin-icon.svg";
@@ -55,7 +58,9 @@ export default [{
     projectPacman,
     projectPandemic,
     projectPortfolio,
-
+    projectClientGif,
+    projectGameOfLifetGif,
+    projectpPandemictGif,
     gitLogo,
     materializeLogo,
     materialUiLogo,
