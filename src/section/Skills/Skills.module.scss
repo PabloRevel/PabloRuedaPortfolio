@@ -1,16 +1,55 @@
 .card{
   margin: 0 15px !important;
+  max-height: 280px !important;
   border: 3px solid transparent  !important;
 }
+
+.card:hover{
+  animation-name: sizing;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform:scale(1.1)
+}
+
+@keyframes sizing {
+  from {transform:scale(1);}
+  to {transform:scale(1.1);}
+}
+
 .textIcons{
   padding:8px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50px 1fr;
   align-items: center;
   p{
     padding-left: 25px;
+  }
+  img{
+    justify-self: center;
+
   }
 }
 
 .otherTech{
   padding-top: 25px;
 }
+
+
+.backgroundImage{
+  height: 350px;
+  left: 0;
+  background-image: url(./background.svg);
+  background-attachment: local;
+  background-size: 500px;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-right: 10%;
+  @media screen and (max-width: 37.5em) {
+    height: 275px;
+    background-size: 250px;
+    background-position: center bottom;
+
+  }
+}
+

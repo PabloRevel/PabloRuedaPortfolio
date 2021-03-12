@@ -8,7 +8,6 @@ import ContactForm from "./contactForm"
 const Contact = () => {
     return ( 
         <div className={contactStyles.divisor}>
-            <div className={contactStyles.backgroundImage} />
             <section id="contact" className={contactStyles.container}>
                 <Container>
                     <h1 style={{textAlign:"center"}}><FormattedMessage id="contact.title"/></h1>

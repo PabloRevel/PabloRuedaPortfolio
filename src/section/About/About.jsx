@@ -40,7 +40,7 @@ const About = () => {
                     <FormattedMessage id="about.title" /> 
                     */}
                     </h1></Fade>
-                    <Fade right duration={1250} delay={1000} distance="30px"><p>
+                    <Fade right duration={1250} delay={1000} distance="75px"><p>
                     I started my career with data and statistics, but while I was discovering the advantages of a nice visualization
                      I discovered the front end field and got in love with it. One day, I decided that it was time to use my skills in this amazing field.
                      </p></Fade>

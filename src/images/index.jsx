@@ -18,11 +18,13 @@ import iconDice from './images/dice-d20-solid.svg';
 import iconMobile from './images/mobile-alt-solid.svg';
 
 
-import projectOne from './images/projectOne.png';
-import projectTwo from './images/projectTwo.png';
-import projectThree from './images/projectThree.png';
-import projectFour from './images/projectFour.png';
-import projectFive from './images/projectFive.png';
+import projectAppleClon from './images/projectAppleClon.png';
+import projectClientSiteOne from './images/projectClientSiteOne.png';
+import projectFitness from './images/projectFitness.png';
+import projectGameOfLife from './images/projectGameOfLife.png';
+import projectPacman from './images/projectPacman.png';
+import projectPandemic from './images/projectPandemic.png';
+import projectPortfolio from './images/projectPortfolio.png';
 
 import iconGit from "./images/github-icon.svg";
 import iconLinkedIn from "./images/linkedin-icon.svg";
@@ -46,11 +48,14 @@ export default [{
     iconGit,
     iconLinkedIn,
     iconTwitter,
-    projectOne,
-    projectTwo,
-    projectThree,
-    projectFour,
-    projectFive,
+    projectAppleClon,
+    projectClientSiteOne,
+    projectFitness,
+    projectGameOfLife,
+    projectPacman,
+    projectPandemic,
+    projectPortfolio,
+
     gitLogo,
     materializeLogo,
     materialUiLogo,
@@ -61,3 +66,4 @@ export default [{
     iconDice,
     iconMobile
 }]
+

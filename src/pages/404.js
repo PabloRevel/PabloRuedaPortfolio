@@ -1,19 +1,18 @@
 import React from "react"
 import { Helmet } from 'react-helmet';
-import { headData } from '../context/data';
 import '../style/main.scss';
 import App from "../section/App"
 
 export default () => {
-  const { title, lang, description } = headData;
 
   return (
     <>
       <Helmet>
       <meta charSet="utf-8" />
-        <title>{title}</title>
-        <html lang={lang } />
-        <meta name="description" content={description} />
+        <title> Pablo Rueda | Front End</title>
+        <html lang="en" />
+        <meta name="description" content="Desarrollador front-end en España. Abierto a colaboraciones y proyectos. 
+        ¡Si necesitas un sitio web no dudes en contactarme!" />
       </Helmet>
       <App />
     </>
