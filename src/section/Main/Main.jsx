@@ -2,7 +2,7 @@ import React from 'react';
 import { FormattedMessage } from "gatsby-plugin-intl"; //language
 
 // components
-import {Video, Button} from "./../../components";
+import {Video, Btn} from "./../../components";
 import mainStyles from "./Main.module.scss";
 import { Link } from 'react-scroll';
 
@@ -26,7 +26,7 @@ const Main = () => {
                     <h3><FormattedMessage id="hero.tittle" /></h3>
                     <div className={mainStyles.buttons}>
                     <Link to="about" smooth duration={1000}>
-                        <Button mainColor="#8DBE49"><FormattedMessage id="hero.button" /></Button>
+                        <Btn mainColor="#8DBE49"><FormattedMessage id="hero.button" /></Button>
                     </Link>       
                     </div>
                 </div>

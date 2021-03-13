@@ -4,7 +4,7 @@ import { FormattedMessage,useIntl } from "gatsby-plugin-intl"; //language
 import ResumeEn from "./PabloRuedaResumeEn.pdf"
 import ResumeEs from "./PabloRuedaResumeEs.pdf"
 //components
-import {ImportImages, Button} from "./../../components";
+import {ImportImages, Btn} from "./../../components";
 
 import {Container, Grid, Card } from '@material-ui/core';
 import {Line} from "react-chartjs-2";
@@ -33,7 +33,7 @@ const About = () => {
                     <a href={ (intl.formatMessage({ id: "about.resume" })==="ResumeEn") ? ResumeEn : ResumeEs }
                             rel="noreferrer" 
                             target="_blank">
-                            <Button padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49"><FormattedMessage id="about.button" /></Button>
+                            <Btn padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49"><FormattedMessage id="about.button" /></Btn>
                     </a>                
                 </div>
                 </Fade></Grid>

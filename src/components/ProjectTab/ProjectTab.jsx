@@ -3,7 +3,7 @@ import React from 'react';
 import projectTabStyles from "./ProjectTab.module.scss";
 
 import {Grid, Card, CardActionArea, CardMedia,CardContent, Typography} from '@material-ui/core';
-import {Button, ImportImages} from "./../index"
+import {Btn, ImportImages} from "./../index"
 import { FormattedMessage } from "gatsby-plugin-intl"; //language
 
 const ProjectTab = (props) => {
@@ -25,9 +25,9 @@ const ProjectTab = (props) => {
                         <div style={{display:"flex", alignItems:"center"}}>
                             
                             <a href={props.project.url} target="blank"> <div style={{margin:"10px 20px 0 0"}}> 
-                                <Button padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49">
+                                <Btn padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49">
                                     <FormattedMessage id="projects.button"  />
-                                </Button> 
+                                </Btn> 
                             </div></a>
                             <a href={props.project.git} target="blank"> 
                                 <div className={projectTabStyles.gitHubLink}>
