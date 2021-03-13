@@ -2,7 +2,7 @@ import React from 'react'
 import contactStyle from "./contact.module.scss"
 import { FormattedMessage,useIntl } from "gatsby-plugin-intl"; //language
 
-import Btn from "../../components/Button/Button"
+import {Button} from "../../components"
 
 import { Formik, Form, Field, ErrorMessage } from 'formik'; // simplify forms
 import * as Yup from 'yup'; // simplify information
@@ -55,7 +55,7 @@ const ContactForm = () => {
                         type="text" id="description" name="description" style={{height:"150px"}}
                         className={contactStyle.field} />
                     <div style={{display:"flex",justifyContent:"center"}}>
-                        <Btn mainColor="#8DBE49" hoverText="#FFFFFF" > <FormattedMessage id="contact.button"/></Btn>
+                        <Button mainColor="#8DBE49" hoverText="#FFFFFF" > <FormattedMessage id="contact.button"/></Button>
                     </div>
                     
                 </Form>
