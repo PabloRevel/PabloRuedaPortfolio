@@ -2,6 +2,20 @@ import React,{useState} from 'react';
 import buttonStyles from "./button.module.scss";
 
 const Button = (props) => {
+  return ( 
+  <div>
+
+    {props.children}
+
+  </div> 
+  );
+}
+ 
+export default Button;
+
+
+/*
+const Button = (props) => {
 
   const main = {
     backgroundColor: props.mainColor || "#06DDDD",
@@ -39,3 +53,4 @@ const Button = (props) => {
 }
  
 export default Button;
+*/
