@@ -26,7 +26,7 @@ const Main = () => {
                     <h3><FormattedMessage id="hero.tittle" /></h3>
                     <div className={mainStyles.buttons}>
                     <Link to="about" smooth duration={1000}>
-                        <Btn mainColor="#8DBE49"><FormattedMessage id="hero.button" /></Button>
+                        <Btn mainColor="#8DBE49"><FormattedMessage id="hero.button" /></Btn>
                     </Link>       
                     </div>
                 </div>

@@ -55,7 +55,7 @@ const ContactForm = () => {
                         type="text" id="description" name="description" style={{height:"150px"}}
                         className={contactStyle.field} />
                     <div style={{display:"flex",justifyContent:"center"}}>
-                        <Btn mainColor="#8DBE49" hoverText="#FFFFFF" > <FormattedMessage id="contact.button"/></Button>
+                        <Btn mainColor="#8DBE49" hoverText="#FFFFFF" > <FormattedMessage id="contact.button"/></Btn>
                     </div>
                     
                 </Form>
