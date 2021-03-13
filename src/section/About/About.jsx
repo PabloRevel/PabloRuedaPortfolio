@@ -30,23 +30,21 @@ const About = () => {
                                 imgId={"profile" }
                 /></div>
                 <div style={{display:"flex", justifyContent:"center", padding:15}}>
-                    <Button padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49"><FormattedMessage id="about.button" /></Button>
+                    <a href={ (intl.formatMessage({ id: "about.resume" })==="ResumeEn") ? ResumeEn : ResumeEs }
+                            rel="noreferrer" 
+                            target="_blank">
+                            <Button padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49"><FormattedMessage id="about.button" /></Button>
+                    </a>                
                 </div>
                 </Fade></Grid>
                 <Grid item xs={12} sm={9} className={aboutStyles.rightDiv}>
-                    <Fade right duration={1000} delay={500} distance="50px"><h1 style={{color:"#074b45"}}> 
-                    ROAD TO FRONT END
-                    {/* 
-                    <FormattedMessage id="about.title" /> 
-                    */}
-                    </h1></Fade>
+                    <Fade right duration={1000} delay={500} distance="50px"><h1 style={{color:"#074b45"}}> <FormattedMessage id="about.title" /></h1></Fade>
                     <Fade right duration={1250} delay={1000} distance="75px"><p>
-                    I started my career with data and statistics, but while I was discovering the advantages of a nice visualization
-                     I discovered the front end field and got in love with it. One day, I decided that it was time to use my skills in this amazing field.
-                     </p></Fade>
-                     <Card className={aboutStyles.card}>
+                        <FormattedMessage id="about.text" />
+                    </p></Fade>
+                    <Card className={aboutStyles.card}>
                         <div style={{maxWidth:"720px", margin:"0 auto"}}> 
-                            <h4 style={{padding:"10px 0 0",margin:"0"}}>Tech time spent (%) per year</h4>
+                            <h4 style={{padding:"10px 0 0",margin:"0"}}><FormattedMessage id="about.chart" /></h4>
                             <div style={{padding:"10px 20px", width:"100%"}}><Line 
                                 data={{
                                     labels: ["2016","2017","2018","2019", "2020","2021"],

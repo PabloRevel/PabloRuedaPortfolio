@@ -4,6 +4,7 @@ import projectTabStyles from "./ProjectTab.module.scss";
 
 import {Grid, Card, CardActionArea, CardMedia,CardContent, Typography} from '@material-ui/core';
 import {Button, ImportImages} from "./../index"
+import { FormattedMessage } from "gatsby-plugin-intl"; //language
 
 const ProjectTab = (props) => {
     
@@ -19,13 +20,15 @@ const ProjectTab = (props) => {
                                 />
                     </CardActionArea>
                     <CardContent>
-                        <Typography variant="h5">{props.project.name} </Typography>
-                        <Typography variant="subtitle1"> {props.project.description} </Typography>
+                        <Typography variant="h5"> <FormattedMessage id={props.project.name}  /></Typography>
+                        <Typography variant="subtitle1"> <FormattedMessage id={props.project.description}  /> </Typography>
                         <div style={{display:"flex", alignItems:"center"}}>
                             
-                            <a href={props.project.url} target="blank"> 
-                                <div style={{margin:"10px 20px 0 0"}}> <Button padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49">Visit it!</Button> </div>
-                            </a>
+                            <a href={props.project.url} target="blank"> <div style={{margin:"10px 20px 0 0"}}> 
+                                <Button padding="0.75rem 2rem" fontSize="20px" mainColor="#8DBE49">
+                                    <FormattedMessage id="projects.button"  />
+                                </Button> 
+                            </div></a>
                             <a href={props.project.git} target="blank"> 
                                 <div className={projectTabStyles.gitHubLink}>
                                 <ImportImages 

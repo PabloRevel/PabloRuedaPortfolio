@@ -22,7 +22,7 @@ const Main = () => {
                         />
                     </Fade>
                 */}
-                    <h1><FormattedMessage id="author" /></h1>
+                    <h1><FormattedMessage id="meta.author" /></h1>
                     <h3><FormattedMessage id="hero.tittle" /></h3>
                     <div className={mainStyles.buttons}>
                     <Link to="about" smooth duration={1000}>

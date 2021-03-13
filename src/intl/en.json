@@ -1,55 +1,83 @@
 {
+  "meta": {
     "title": "Pablo Rueda - Frontend developer",
     "description": "Front-end developer in Andalucia, Spain. Open for new projects, collaborations or freelance projects.",
-    "author": "Pablo Rueda",
-    "nav": {
-      "main": "Main",
-      "about": "About me",
-      "projects": "Projects",
-      "contact": "Contact"
+    "author": "Pablo Rueda"
+  },
+  "navbar": {
+    "main": "MAIN",
+    "about": "ABOUT ME",
+    "skills": "SKILLS",
+    "projects": "PROJECTS",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "tittle": "Front end Developer",
+    "button": "Know more"
+  },
+  "about": {
+    "title": "ROAD TO FRONT END",
+    "resume": "ResumeEn",
+    "button": "Resume",
+    "text": "I started my career with data and statistics, but while I was discovering the advantages of a nice visualization I discovered the front end field and got in love with it. One day, I decided that it was time to use my skills in this amazing field.",
+    "chart":"Tech time spent (%) per year"
+  },
+  "skills": {
+    "title": "SKILLS",
+    "subsection":"*Other Tech:",
+    "toptech": {
+      "tittle": "Top Tech*"
     },
-    "hero": {
-      "tittle": "Frontend Developer",
-      "button": "Know more"
+    "knowledge": {
+      "tittle": "knowledge",
+      "apis":"APIs management",
+      "statistics":"Statistics",
+      "responsive":"Responsive design"
     },
-    "about": {
-      "title": "ABOUT ME",
-      "resume": "ResumeEn",
-      "button": "Resume",
-      "pharagraphOne": "Hi! I'm Pablo Rueda, a frontend developer full of energy and passion for the tech industry.",
-      "pharagraphTwo": "I got in love with coding thanks to R and Python (I come from a MSc in Statistics), but nowadays I'm more engaged with frontend stack. Mainly, I use HTML, CSS and Javascript. But I use some frameworks to support my work, as SASS, React / Gatsby, Materialize and Material UI. For version control y use Git, but I have knoweldge of Tortoise SVN.",
-      "pharagraphThree": "If you have a web project or are interested on my profile for any project, don't hesitate in contact me!"
-    },
-
-    "projects": {
-      "title": "PROJECTS",
-      "button": "Try it!",
-      "projectOne": {
-        "phOne": "Freelance website project. Developed from scratch using figma for the design and Inkscape for the logo. ",
-        "phTwo": "The project was developed with React / Gatsby, using SASS to compile CSS and some Material UI components as a baseline."
-      },
-      "projectTwo": {
-        "phOne": "Apple website clone (November 2020, UK) created to practise my skills with HTML5, CSS, SASS and vanilla Javascript. In general, I consider it as a good example of my skills to follow strict design lines.",
-        "phTwo": "I had to use Javascript for: the blurr of the navbar, the shopping button and the menu hamburguer button in the mobile version."
-      },
-      "projectThree": {
-        "phOne": "First full react App I created. It implements React state and hooks to manage the information throught the pages. It uses SASS to compile CSS.",
-        "phTwo": " "
-      },
-      "projectFour": {
-        "phOne": "Full pacman project implementing my Object Oriented Programming and DOM manipulation knowledge to create a Pacman game.",
-        "phTwo": "The project uses mainly vanilla javascript. The board is based on a numbers array and a function to convert each number in a div cell (so the board is easily modificable). Ghosts and Pacman are created from the same Creature prototype, but with different methods to define the movement (in ghosts, the movement is random)."
-      },
-      "projectFive": {
-        "phOne": " Personal version of Conyway's Game of Life. After creating an small Pacman project, I realised that small mini-games are a good way of testing and increasing my skills.",
-        "phTwo": " In this project, I wanted to test my skills with React context and hooks for state management, while creating meaningfull components (board-cells, header and the instructions)."
-      }
-    },
-    "contact": {
-      "title": "CONTACT",
-      "button": "Send",
-      "name": "Name",
-      "description": "How can I help you?"
+    "soft": {
+      "tittle": "Soft Skills",
+      "motivation":"Motivation",
+      "team":"Team work",
+      "flexible":"Flexibility"
     }
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "subsection":"All my projects",
+    "button": "Try it!",
+    "clientsite":{
+      "tittle":"Client Site",
+      "description": "Responsive client website created with Gatsby / React."
+    },
+    "gameoflife":{
+      "tittle":"Game of Life",
+      "description": "Conway's game of life created using React."
+    },
+    "corona":{
+      "tittle":"Corona Tracker",
+      "description": "Responsive Corona Virus web app created (with React) to track the spread of the pandemy around the world."
+    },
+    "portfolio":{
+      "tittle":"Pablo Rueda Portfolio",
+      "description": "My personal responsive portfolio, created using Gatsby / React."
+    },
+    "fitness":{
+      "tittle":"Fitness Pluss",
+      "description": "Actually, this was my first React App. I created it to optmize my time doing sport."
+    },
+    "pacman":{
+      "tittle":"Pacman",
+      "description": "As soon as I knew the basics of Object Oriented Programming with ES6 JS, I wanted to create my own mini-game. This is the result."
+    },
+    "appleclon":{
+      "tittle":"Apple Clone",
+      "description": "Responsive Apple Clone (UK Nov. 2020) created with HTML, CSS, SASS and Javascript."
+    }
+  },
+  "contact": {
+    "title": "CONTACT",
+    "button": "Send",
+    "name": "Name",
+    "description": "How can I help you?"
   }
-  
+}

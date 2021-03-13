@@ -57,11 +57,11 @@ const useStyles = makeStyles((theme) => ({
             <span></span>
           </div>
             <Grid container direction="row" justify="flex-end" alignItems="center">
-              <Link className={headerStyles.navItem} smooth duration={1000} to="main">MAIN</Link>
-              <Link className={headerStyles.navItem} smooth duration={1000} to="about">ABOUT</Link>
-              <Link className={headerStyles.navItem} smooth duration={1000} to="skills">SKILLS</Link>
-              <Link className={headerStyles.navItem} smooth duration={1000} to="projects">PROJECTS</Link>
-              <Link className={headerStyles.navItem} smooth duration={1000} to="contact">CONTACT</Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="main"><FormattedMessage id="navbar.main" /></Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="about"><FormattedMessage id="navbar.about" /></Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="skills"><FormattedMessage id="navbar.skills" /></Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="projects"><FormattedMessage id="navbar.projects" /></Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="contact"><FormattedMessage id="navbar.contact" /></Link>
               <div> 
                 <div style={{display:"flex"}}>
                   <IntlContextConsumer>
@@ -91,11 +91,11 @@ const useStyles = makeStyles((theme) => ({
         </AppBar>
         <div className={cx(headerStyles.hambgMenu,(hmbg?headerStyles.block:headerStyles.none))}>
         <Grid container direction="column" justify="flex-end" alignItems="center" className={headerStyles.hambgGrid}>
-              <Link className={headerStyles.hambgItem} smooth duration={1000} to="main" onClick={()=>{sethHmbg(!hmbg)}}>MAIN</Link>
-              <Link className={headerStyles.hambgItem} smooth duration={1000} to="about" onClick={()=>{sethHmbg(!hmbg)}}>ABOUT</Link>
-              <Link className={headerStyles.hambgItem} smooth duration={1000} to="skills" onClick={()=>{sethHmbg(!hmbg)}}>SKILLS</Link>
-              <Link className={headerStyles.hambgItem} smooth duration={1000} to="projects" onClick={()=>{sethHmbg(!hmbg)}}>PROJECTS</Link>
-              <Link className={headerStyles.hambgItem} smooth duration={1000} to="contact" onClick={()=>{sethHmbg(!hmbg)}}>CONTACT</Link>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="main" onClick={()=>{sethHmbg(!hmbg)}}><FormattedMessage id="navbar.main" /></Link>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="about" onClick={()=>{sethHmbg(!hmbg)}}><FormattedMessage id="navbar.about" /></Link>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="skills" onClick={()=>{sethHmbg(!hmbg)}}><FormattedMessage id="navbar.skills" /></Link>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="projects" onClick={()=>{sethHmbg(!hmbg)}}><FormattedMessage id="navbar.projects" /></Link>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="contact" onClick={()=>{sethHmbg(!hmbg)}}><FormattedMessage id="navbar.contact" /></Link>
         </Grid>
         </div>
       </div>

@@ -1,55 +1,83 @@
 {
-    "title": "Pablo Rueda - Frontend developer",
-    "description": "Desarrollador frontend en Andalucia, España. Si necesitas una web propia, tienes un proyecto en mente o sencillamente buscas una colaboración, no dudes en contactarme.",
-    "author": "Pablo Rueda",
-    "nav": {
-      "main": "Inicio",
-      "about": "Sobre mi",
-      "projects": "Proyectos",
-      "contact": "Contacto"
+  "meta": {
+    "title": "Pablo Rueda - Desarrollador Front end",
+    "description": "Front-end developer in Andalucia, Spain. Open for new projects, collaborations or freelance projects.",
+    "author": "Pablo Rueda"
+  },
+  "navbar": {
+    "main": "INICIO",
+    "about": "SOBRE MI",
+    "skills": "HABILIDADES",
+    "projects": "PROYECTOS",
+    "contact": "CONTACTO"
+  },
+  "hero": {
+    "tittle": "Desarrollador Front end",
+    "button": "Más"
+  },
+  "about": {
+    "title": "CAMINO AL FRONT END",
+    "resume": "ResumeEs",
+    "button": "CV",
+    "text": "Comencé mi carrera con datos y estadística, pero mientras descubría las ventajas de una buena visualización de datos, encontré un campo apasionante en el desarrollo front end. Un día decidí poner a prueba mis habilidades en este campo.",
+    "chart":"Uso de tecnologías (%) por año"
+  },
+  "skills": {
+    "title": "HABILIDADES",
+    "subsection":"*Otras tecnologías:",
+    "toptech": {
+      "tittle": "Top Tech*"
     },
-    "hero": {
-      "tittle": "Desarrollador Frontend",
-      "button": "Conóceme"
+    "knowledge": {
+      "tittle": "Conocimientos",
+      "apis":"Gestión de APIs",
+      "statistics":"Estadística",
+      "responsive":"Diseño Responsive"
     },
-    "about": {
-      "title": "SOBRE MI",
-      "resume": "ResumeEs",
-      "button": "Currículum",
-      "pharagraphOne": "¡Hola! Soy Pablo Rueda, un desarrollador frontend lleno de energía y apasionado por la industria tecnológica.",
-      "pharagraphTwo": " Me enamoré del campo de la programación gracias a R y Python (aprendidos en mi máster en estadística), aunque en la actualidad uso más herramientas de frontend. Principalmente, uso HTML, CSS y Javascript; pero también me apoyo en distintos frameworks y librerías como SASS, React / Gatsby, Materialize y Material UI. Para control de versión uso Git, aunque también he usado Tortoise SVN.",
-      "pharagraphThree": " Si necesitas una web o estás interesado en mí para un proyecto de desarrollo, ¡no dudes en contactarme!"
-    },
-
-    "projects": {
-      "title": "PROYECTOS",
-      "button": "¡Pruébalo!",
-      "projectOne": {
-        "phOne": "Web que desarrollé como autónomo. Me apoyé en Figma para el diseño, usé Inkscape para el logo.",
-        "phTwo": " El proyecto fué desarrollado empleando React / Gatsby, apoyandome en SASS para la escritura de CSS y Material UI como base para los componentes ."
-      },
-      "projectTwo": {
-        "phOne": "Copia del sitio web de Apple (UK, Noviembre 2020) creada para practicar mis habilidades con HTML5, CSS, SASS y javascript vanilla. En general, considero el proyecto un buen ejemplo de mi habilidad para seguir diseños específicos.",
-        "phTwo": " Empleé javascript para: el diseño borroso de la barra de navegación, el menú de compra y el menú desplegable en móbil."
-      },
-      "projectThree": {
-        "phOne": " Primer proyecto de app completa con React. Emplea el manejo de estado de React y hooks para paso de información a través de las páginas. Utiliza SASS para compilar el CSS.",
-        "phTwo": " "
-      },
-      "projectFour": {
-        "phOne": " Juego de Pacman implementando mis conocimientos de Programación Orientada a Objetos y de manejo del entorno con Javascript vanilla.",
-        "phTwo": "El tablero se base en un array de números, empleando una función para convertir los números en divs de celdas. Los fantasmas y pacman se basan en el mismo prototipo Creature, pero implementando diferentes métodos para el movimiento (aleatorio, en el caso de los fantasmas)."
-      },
-      "projectFive": {
-        "phOne": " Versión propia del Juego de la Vida de Conyway. Tras mi pequeño Pacman, sentí que hacer mini-juegos era una buena forma de poner a prueba mis habilidades y mejorar.",
-        "phTwo": " En este proyecto, pruebo mi habilidad gestionando el estado de React con Context y Hooks, mientras creo componentes que tengan sentido práctico para el proyecto (tablero-celdas, cabecera e instrucciones)."
-      }
-    },
-    "contact": {
-      "title": "CONTACTO",
-      "button": "Enviar",
-      "name": "Nombre",
-      "description": "¿Cómo puedo ayudarte?"
+    "soft": {
+      "tittle": "Soft Skills",
+      "motivation":"Motivación",
+      "team":"Trabajo en equipo",
+      "flexible":"Flexibilidad"
     }
+  },
+  "projects": {
+    "title": "PROYECTOS",
+    "subsection":"Todos mis proyectos",
+    "button": "¡Pruébalo!",
+    "clientsite":{
+      "tittle":"Web Cliente",
+      "description": "Web responsive que desarrolle con React/ Gatsby como autónomo."
+    },
+    "gameoflife":{
+      "tittle":"Game of Life",
+      "description": " Juego de la vida de Conway desarrollado en React."
+    },
+    "corona":{
+      "tittle":"Corona Tracker",
+      "description": " Web app responsive desarrollada (con React) para seguir la evolución del CoVid."
+    },
+    "portfolio":{
+      "tittle":"Pablo Rueda Portafolio",
+      "description": "Mi portafolio personal (como puedes ver, responsive), creado con Gatsby / React."
+    },
+    "fitness":{
+      "tittle":"Fitness Pluss",
+      "description": "Mi primera App con React. Creada para controlar cuanto deporte hago por rutina de ejercicios."
+    },
+    "pacman":{
+      "tittle":"Pacman",
+      "description": "Aprendiendo Javascript y Programación Orientada a Objectos quise crear un mini-juego de práctica. Surgió este pacman"
+    },
+    "appleclon":{
+      "tittle":"Clon de Apple",
+      "description": "Clon responsive de la web de apple (UK Nov. 2002) creado con HTML, CSS, SASS y Javascript."
+    }
+  },
+  "contact": {
+    "title": "CONTACTO",
+    "button": "Enviar",
+    "name": "Nombre",
+    "description": "¿Cómo te puedo ayudar?"
   }
-  
+}
