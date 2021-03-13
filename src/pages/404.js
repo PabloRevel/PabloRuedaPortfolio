@@ -1,6 +1,5 @@
 import React from "react"
 import { Helmet } from 'react-helmet';
-import '../style/main.scss';
 import App from "../section/App"
 
 export default () => {

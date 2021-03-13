@@ -2,7 +2,7 @@ import React from 'react';
 import { FormattedMessage } from "gatsby-plugin-intl"; //language
 
 // components
-import {Video, Button} from "../../components"
+import {Video, Button} from "./../../components";
 import mainStyles from "./Main.module.scss";
 import { Link } from 'react-scroll';
 
