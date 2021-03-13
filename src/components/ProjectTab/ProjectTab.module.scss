@@ -22,7 +22,16 @@
         padding: 0 !important;
         min-height: 500px;
         border-bottom: #8DBE49 5px solid !important;
-      }
+    }
+    @media screen and (max-width: 800px) {
+        height: 100% !important;
+        width: 100% !important;
+        .image{
+            padding: 0 !important;
+            min-height: 300px;
+            border-bottom: #8DBE49 5px solid !important;
+        }
+    }
 }
 
 .gitHubLink{
