@@ -5,6 +5,7 @@ import { FormattedMessage, injectIntl,IntlContextConsumer, changeLocale } from "
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import headerStyles from "./header.module.scss";
+import cx from "classnames";
 
 //Components:
 import AppBar from '@material-ui/core/AppBar';
@@ -19,10 +20,7 @@ import { Link } from 'react-scroll';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-    },
-    customizeToolbar: {
-      minHeight: '50px',
-      paddingRight:55
+      backgroundColor:"transparent"
     },
   }));
   
@@ -32,48 +30,53 @@ const useStyles = makeStyles((theme) => ({
       es: "ES",
     }
     const classes = useStyles();
-    const [shadowOnScroll, setShadowOnScroll] = useState({
-      boxShadow: "0px 0px 0px 0px white",
-    });
-    const [barColor, setBarColor] = useState({
-      background: 'transparent', margin: 0, boxShadow: "0px 0px 0px 0px black", 
-    });
-    const [linkColor, setLinkColor] = useState({
-      color: 'white'
-    });
+    const [shadowOnScroll, setShadowOnScroll] = useState({backgroundPosition:"left bottom"});
+    const [scrollPosition, setscrollPosition] = useState(0);
+    const [hmbg, sethHmbg] = useState(false);
+
     useScrollPosition(({ prevPos, currPos }) => {
-        const shadow = -350 > currPos.y
+        const shadow = -50 > currPos.y
         if(shadow){
-            setShadowOnScroll({boxShadow: "0px 0px 3px 0.1px black"});
-            setBarColor({ background: 'white', margin: 0, boxShadow: "0px 0px 0px 0px black", transition:"1s"});
-            setLinkColor({transition:"0.5s"})
+            setShadowOnScroll({backgroundPosition:"left top"});
+            setscrollPosition(1);
         }else{
-            setShadowOnScroll({boxShadow: "0px 0px 0px 0px white"});
-            setBarColor({ background: 'transparent', margin: 0, boxShadow: "0px 0px 0px 0px black", transition:"1s"});
-            setLinkColor({color: 'white', transition:"1s"})
+            setShadowOnScroll({backgroundPosition:"left bottom"});
+            setscrollPosition(0);
         }
       })
   
     return (
-        <AppBar  position="fixed" className={classes.root} style={barColor}>
-          <Toolbar className={classes.customizeToolbar} style={shadowOnScroll}>
+      <div>
+        <AppBar  position="fixed" className={classes.root}>
+          <Toolbar className={cx(headerStyles.navBar,(scrollPosition?headerStyles.bottom:headerStyles.top))} style={shadowOnScroll}>
+          <div 
+          className={cx(headerStyles.hamburguer,(hmbg?headerStyles.open:headerStyles.close))}
+          onClick={()=>{sethHmbg(!hmbg)}}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
             <Grid container direction="row" justify="flex-end" alignItems="center">
-              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="main"><FormattedMessage id="nav.main" /></Link>
-              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="about"><FormattedMessage id="nav.about" /></Link>
-              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="skills">skill</Link>
-              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="projects"><FormattedMessage id="nav.projects" /></Link>
-              <Link className={headerStyles.navItem} style={linkColor} smooth duration={1000} to="contact"><FormattedMessage id="nav.contact" /></Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="main">MAIN</Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="about">ABOUT</Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="skills">SKILLS</Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="projects">PROJECTS</Link>
+              <Link className={headerStyles.navItem} smooth duration={1000} to="contact">CONTACT</Link>
               <div> 
                 <div style={{display:"flex"}}>
                   <IntlContextConsumer>
                     {({ languages, language: currentLocale }) =>
                       languages.map(language => (
-                        <div className="lang" key={language}>
+                        <div key={language}>
                           <button
                             onClick={() => changeLocale(language)}
-                            className={headerStyles.navItem}
-                            style={linkColor}
-                          >
+                            className={cx(headerStyles.languageBtn,
+                            
+                            ((currentLocale===language)?headerStyles.darkGreen:(
+                              scrollPosition?headerStyles.black:headerStyles.white)
+                              ))}
+                            >
+                            
                             {languageName[language]}
                           </button>
 
@@ -86,5 +89,15 @@ const useStyles = makeStyles((theme) => ({
             </Grid>
           </Toolbar>
         </AppBar>
+        <div className={cx(headerStyles.hambgMenu,(hmbg?headerStyles.block:headerStyles.none))}>
+        <Grid container direction="column" justify="flex-end" alignItems="center" className={headerStyles.hambgGrid}>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="main" onClick={()=>{sethHmbg(!hmbg)}}>MAIN</Link>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="about" onClick={()=>{sethHmbg(!hmbg)}}>ABOUT</Link>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="skills" onClick={()=>{sethHmbg(!hmbg)}}>SKILLS</Link>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="projects" onClick={()=>{sethHmbg(!hmbg)}}>PROJECTS</Link>
+              <Link className={headerStyles.hambgItem} smooth duration={1000} to="contact" onClick={()=>{sethHmbg(!hmbg)}}>CONTACT</Link>
+        </Grid>
+        </div>
+      </div>
     );
   })

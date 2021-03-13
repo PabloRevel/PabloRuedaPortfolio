@@ -18,7 +18,7 @@ const About = () => {
 
     return ( 
         <section id="about" className={aboutStyles.about}>
-            <Container style={{paddingTop:"3rem"}}>
+            <Container style={{paddingTop:"4rem"}}>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={3}><Fade bottom duration={1000} delay={500} distance="30px">
                 <div style={{display:"flex", justifyContent:"center"}}>

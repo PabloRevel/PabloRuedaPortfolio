@@ -8,7 +8,7 @@ const Skills = () => {
     return ( 
         <section id="skills">
             <Container>
-                <h1 style={{textAlign:"center", color:"#074b45", paddingTop:"3rem"}}>SKILLS</h1>
+                <h1 style={{textAlign:"center", color:"#074b45", paddingTop:"4rem"}}>SKILLS</h1>
                 <Grid container spacing={0} justify="center">
                     <Grid item xs={12} md={3} >
                         <Fade top duration={1000} delay={500} distance="50px"><Card className={skillsStyles.card}>

@@ -7,14 +7,12 @@ import ContactForm from "./contactForm"
 
 const Contact = () => {
     return ( 
-        <div className={contactStyles.divisor}>
-            <section id="contact" className={contactStyles.container}>
-                <Container>
-                    <h1 style={{textAlign:"center"}}><FormattedMessage id="contact.title"/></h1>
-                    <ContactForm />
-                </Container>
-            </section>
-        </div>
+        <section id="contact" className={contactStyles.container}>
+            <Container>
+                <h1 style={{textAlign:"center"}}><FormattedMessage id="contact.title"/></h1>
+                <ContactForm />
+            </Container>
+        </section>
      );
 }
  

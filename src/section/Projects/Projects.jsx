@@ -1,20 +1,21 @@
 import React, {useState} from 'react';
+
 import { FormattedMessage } from "gatsby-plugin-intl"; //language
 
 import projectsStyles from "./projects.module.scss";
 
 import { ProjectTab } from "./../../components"
-
+import Flip from 'react-reveal/Flip';
 import {Container, Grid, Card, CardActionArea, CardMedia,CardContent, Typography, NativeSelect, FormControl} from '@material-ui/core';
+
 import images from "../../images"
 
 
 const Projects = () => {
     const [projectSelected, setProjectSelected] = useState("Pablo Rueda Portfolio");
-    
     const [display, setDisplay] = useState({display:"none"});
     const [projectDisplay, setProjectDisplay] = useState("Pablo Rueda Portfolio");
-    
+
     const handleDisplayChange = (project,visibility) => {
         setDisplay(visibility);
         setProjectDisplay(project);
@@ -93,18 +94,20 @@ const Projects = () => {
                 <Grid container spacing={1} justify="center">
                 {Top.map(project => {
                     return (
-                    <Grid item xs={12} md={4}  component={Card} className={projectsStyles.card} key={projects[project].name}>
-                        <CardActionArea onClick={()=>{handleDisplayChange(project,{display:"block"})}}>
-                            <CardMedia 
-                                image={projects[project].image} 
-                                className={projectsStyles.image}
-                                />
-                        </CardActionArea>
-                        <CardContent>
-                            <Typography variant="h5" className={projectsStyles.tittle}> {projects[project].name} </Typography>
-                            <Typography variant="subtitle1" className={projectsStyles.tech}> {projects[project].tech} </Typography>
-                        </CardContent>
-                    </Grid>
+                    <Flip left duration={1000} delay={500}>
+                        <Grid item xs={12} md={4}  component={Card} className={projectsStyles.card} key={projects[project].name}>
+                            <CardActionArea onClick={()=>{handleDisplayChange(project,{display:"block"})}}>
+                                <CardMedia 
+                                    image={projects[project].image} 
+                                    className={projectsStyles.image}
+                                    />
+                            </CardActionArea>
+                            <CardContent>
+                                <Typography variant="h5" className={projectsStyles.tittle}> {projects[project].name} </Typography>
+                                <Typography variant="subtitle1" className={projectsStyles.tech}> {projects[project].tech} </Typography>
+                            </CardContent>
+                        </Grid>
+                    </Flip>
                     )
                 })}
                 </Grid>
