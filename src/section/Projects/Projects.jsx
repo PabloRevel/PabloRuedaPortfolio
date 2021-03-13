@@ -17,7 +17,7 @@ const Projects = () => {
     const [projectDisplay, setProjectDisplay] = useState("Pablo Rueda Portfolio");
 
 
-    const intl = useIntl()
+    const intl = useIntl();
     const handleDisplayChange = (project,visibility) => {
         setDisplay(visibility);
         setProjectDisplay(project);

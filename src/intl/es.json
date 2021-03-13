@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Pablo Rueda - Desarrollador Front end",
-    "description": "Front-end developer in Andalucia, Spain. Open for new projects, collaborations or freelance projects.",
+    "description": "Front-end developer Spain. Open for new projects, collaborations or freelance projects.",
     "author": "Pablo Rueda"
   },
   "navbar": {
@@ -13,12 +13,12 @@
   },
   "hero": {
     "tittle": "Desarrollador Front end",
-    "button": "Más"
+    "button": "Conóceme"
   },
   "about": {
     "title": "CAMINO AL FRONT END",
     "resume": "ResumeEs",
-    "button": "CV",
+    "button": "Resume / CV",
     "text": "Comencé mi carrera con datos y estadística, pero mientras descubría las ventajas de una buena visualización de datos, encontré un campo apasionante en el desarrollo front end. Un día decidí poner a prueba mis habilidades en este campo.",
     "chart":"Uso de tecnologías (%) por año"
   },

@@ -13,7 +13,7 @@ const ProjectTab = (props) => {
             <Card className={projectTabStyles.card}>
                 <a href="javascript:void(0)" className={projectTabStyles.close} onClick={()=>{props.handleDisplayChange("Pablo Rueda Portfolio",{display:"none"})}}>&times;</a>
                 <Grid>
-                    <CardActionArea style={{cursor:"default"}}>
+                    <CardActionArea style={{cursor:"default"}} onClick={()=>{props.handleDisplayChange("Pablo Rueda Portfolio",{display:"none"})}}>
                     <CardMedia 
                                 image={(props.project.gif? props.project.gif : props.project.image)} 
                                 className={projectTabStyles.image}
