@@ -114,7 +114,16 @@ const Projects = () => {
                 })}
                 </Grid>
                 <div className={projectsStyles.formContainer}>
-                <Typography variant="h5" className={projectsStyles.tittle}> <FormattedMessage id="projects.subsection" /> </Typography>
+                    <Typography variant="h5" className={projectsStyles.tittle}> <FormattedMessage id="projects.subsection" /> </Typography>
+                    <FormControl>
+                        <NativeSelect defaultValue="Pablo Rueda Portfolio" onChange={(e)=>{setProjectSelected(e.target.value)}}>
+                            {projectsNames.map(project =>{
+                                    return(<option value={project} key={projects[project].name}>
+                                        { intl.formatMessage({ id: projects[project].name })}
+                                     </option>)
+                            })}
+                        </NativeSelect>
+                    </FormControl>
                     <Card className={projectsStyles.card}>
                    
                         <CardActionArea onClick={()=>{handleDisplayChange(projectSelected,{display:"block"})}}>
@@ -129,15 +138,6 @@ const Projects = () => {
                         </CardContent>
                     
                     </Card>
-                    <FormControl>
-                        <NativeSelect defaultValue="Pablo Rueda Portfolio" onChange={(e)=>{setProjectSelected(e.target.value)}}>
-                            {projectsNames.map(project =>{
-                                    return(<option value={project} key={projects[project].name}>
-                                        { intl.formatMessage({ id: projects[project].name })}
-                                     </option>)
-                            })}
-                        </NativeSelect>
-                    </FormControl>
                 </div>
             <ProjectTab project={projects[projectDisplay]} display={display} handleDisplayChange={handleDisplayChange} />
             </Container>
