@@ -17,16 +17,16 @@ const Skills = () => {
                                 <Typography align="center" color="textSecondary" variant="h5"> <FormattedMessage id="skills.toptech.tittle" /> </Typography> 
 
                                 <div className={skillsStyles.textIcons}> 
-                                    <ImportImages height="50px" imgId={"iconSASS"} />
-                                    <Typography  gutterBottom> CSS / SASS</Typography>
+                                    <ImportImages height="50px" imgId={"iconData"} />
+                                    <Typography  gutterBottom> SQL </Typography>
                                 </div>
                                 <div className={skillsStyles.textIcons}> 
-                                    <ImportImages height="50px" imgId={"iconJS"} />
-                                    <Typography  gutterBottom> JavaScript</Typography>
+                                    <ImportImages height="50px" imgId={"iconPython"} />
+                                    <Typography  gutterBottom> Python </Typography>
                                 </div>
                                 <div className={skillsStyles.textIcons}> 
                                     <ImportImages height="50px" imgId={"iconReact"} />
-                                    <Typography  gutterBottom> React JS</Typography>
+                                    <Typography  gutterBottom> AWS </Typography>
                                 </div>
                             </CardContent>
                         </Card></Fade>
@@ -75,9 +75,9 @@ const Skills = () => {
                 <div className={skillsStyles.backgroundImage}> 
                     <div className={skillsStyles.otherTech} >
                             <Typography  variant="h5"> <FormattedMessage id="skills.subsection" /></Typography>
+                            <Typography  > Data: R, Python, SQL,  (py)Spark</Typography>
                             <Typography  > Front end: HTML, CSS, SASS, Materialize, Javascript, React, Gatsby</Typography>
-                            <Typography  > Back end: node.js, mongoDB, MySQL</Typography>
-                            <Typography  > Data: R, Python</Typography>
+                            <Typography  > Back end: node.js, mongoDB</Typography>
                     </div>
                 </div>
             </Container>

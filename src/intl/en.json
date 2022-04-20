@@ -19,7 +19,7 @@
     "title": "ROAD TO FRONT END",
     "resume": "ResumeEn",
     "button": "Resume",
-    "text": "I started my career with data and statistics, but while I was discovering the advantages of a nice visualization I discovered the front end field and got in love with it. One day, I decided that it was time to use my skills in this amazing field.",
+    "text": "I started my career with data and statistics, but I have always enjoyed learning new fields. On my free time I have turn web development on my hobby and here are the results.",
     "chart":"Tech time spent (%) per year"
   },
   "skills": {
@@ -30,9 +30,9 @@
     },
     "knowledge": {
       "tittle": "knowledge",
-      "apis":"APIs management",
+      "apis":"Data Bases",
       "statistics":"Statistics",
-      "responsive":"Responsive design"
+      "responsive":"Business Intelligence"
     },
     "soft": {
       "tittle": "Soft Skills",
@@ -42,8 +42,8 @@
     }
   },
   "projects": {
-    "title": "PROJECTS",
-    "subsection":"All my projects",
+    "title": "WEB PROJECTS",
+    "subsection":"All my web projects",
     "button": "Try it!",
     "clientsite":{
       "tittle":"Client Site",

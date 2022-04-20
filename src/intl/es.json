@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Pablo Rueda - Desarrollador Front end",
-    "description": "Front-end developer Spain. Open for new projects, collaborations or freelance projects.",
+    "title": "Pablo Rueda - Data Analyst",
+    "description": "Data Analyst Spain. Open for new projects, collaborations or freelance projects.",
     "author": "Pablo Rueda"
   },
   "navbar": {
@@ -12,14 +12,14 @@
     "contact": "CONTACTO"
   },
   "hero": {
-    "tittle": "Desarrollador Front end",
+    "tittle": "Data Analyst",
     "button": "Conóceme"
   },
   "about": {
     "title": "CAMINO AL FRONT END",
     "resume": "ResumeEs",
     "button": "Resume / CV",
-    "text": "Comencé mi carrera con datos y estadística, pero mientras descubría las ventajas de una buena visualización de datos, encontré un campo apasionante en el desarrollo front end. Un día decidí poner a prueba mis habilidades en este campo.",
+    "text": "Comencé mi carrera con datos y estadística, pero siempre he disfrutado aprendiendo nuevos campos. En mi tiempo libre he hecho del desarrollo web un hobby siendo este el resultado.",
     "chart":"Uso de tecnologías (%) por año"
   },
   "skills": {
@@ -30,9 +30,9 @@
     },
     "knowledge": {
       "tittle": "Conocimientos",
-      "apis":"Gestión de APIs",
+      "apis":"Bases de datos",
       "statistics":"Estadística",
-      "responsive":"Diseño Responsive"
+      "responsive":"Business Intelligence"
     },
     "soft": {
       "tittle": "Soft Skills",
@@ -42,8 +42,8 @@
     }
   },
   "projects": {
-    "title": "PROYECTOS",
-    "subsection":"Todos mis proyectos",
+    "title": "PROYECTOS WEB",
+    "subsection":"Todos mis proyectos de desarrollo web",
     "button": "¡Pruébalo!",
     "clientsite":{
       "tittle":"Web Cliente",

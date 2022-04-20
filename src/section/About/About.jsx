@@ -47,24 +47,30 @@ const About = () => {
                             <h4 style={{padding:"10px 0 0",margin:"0"}}><FormattedMessage id="about.chart" /></h4>
                             <div style={{padding:"10px 20px", width:"100%"}}><Line 
                                 data={{
-                                    labels: ["2016","2017","2018","2019", "2020","2021"],
+                                    labels: ["2017","2018","2019", "2020","2021","2022"],
                                     datasets: [
                                         {
-                                            data: [100, 90,90,60,20,10],
+                                            data: [100, 90,60,10,0,0],
                                             label:"R",
                                             borderColor:"#2d4fcc",
                                             fill: false
                                         },
                                         {
-                                            data: [0, 10,10,30,20,0],
+                                            data: [0, 10,20,30,40,30],
                                             label:"Python",
                                             borderColor:"#c73f36",
                                             fill: false
                                         },
                                         {
-                                            data: [0, 0,0,10,70,90],
+                                            data: [0, 0,20,60,10,0],
                                             label:"JavaScript",
                                             borderColor:"#ebe534",
+                                            fill: false
+                                        },
+                                        {
+                                            data: [0, 0,0,0,50,70],
+                                            label:"SQL",
+                                            borderColor:"#BB62DC",
                                             fill: false
                                         }]
                                 }}
