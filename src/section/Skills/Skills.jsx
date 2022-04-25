@@ -26,7 +26,7 @@ const Skills = () => {
                                 </div>
                                 <div className={skillsStyles.textIcons}> 
                                     <ImportImages height="50px" imgId={"iconReact"} />
-                                    <Typography  gutterBottom> AWS </Typography>
+                                    <Typography  gutterBottom> Amazon Web Services</Typography>
                                 </div>
                             </CardContent>
                         </Card></Fade>

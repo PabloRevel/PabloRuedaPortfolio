@@ -62,13 +62,13 @@ const About = () => {
                                             fill: false
                                         },
                                         {
-                                            data: [0, 0,20,60,10,0],
+                                            data: [0, 0,20,50,10,0],
                                             label:"JavaScript",
                                             borderColor:"#ebe534",
                                             fill: false
                                         },
                                         {
-                                            data: [0, 0,0,0,50,70],
+                                            data: [0, 0,0,10,50,70],
                                             label:"SQL",
                                             borderColor:"#BB62DC",
                                             fill: false
