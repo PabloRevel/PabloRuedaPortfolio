@@ -47,28 +47,28 @@ const About = () => {
                             <h4 style={{padding:"10px 0 0",margin:"0"}}><FormattedMessage id="about.chart" /></h4>
                             <div style={{padding:"10px 20px", width:"100%"}}><Line 
                                 data={{
-                                    labels: ["2017","2018","2019", "2020","2021","2022"],
+                                    labels: ["2017","2018","2019", "2020","2021","2022", "2023", "2024"],
                                     datasets: [
                                         {
-                                            data: [100, 90,60,10,0,0],
+                                            data: [100, 90,60,10,0,0,0,0],
                                             label:"R",
                                             borderColor:"#2d4fcc",
                                             fill: false
                                         },
                                         {
-                                            data: [0, 10,20,30,40,30],
+                                            data: [0, 10,20,30,40,30,50,60],
                                             label:"Python",
                                             borderColor:"#c73f36",
                                             fill: false
                                         },
                                         {
-                                            data: [0, 0,20,50,10,0],
+                                            data: [0, 0,20,50,10,0,0,0],
                                             label:"JavaScript",
                                             borderColor:"#ebe534",
                                             fill: false
                                         },
                                         {
-                                            data: [0, 0,0,10,50,70],
+                                            data: [0, 0,0,10,50,70,50,40],
                                             label:"SQL",
                                             borderColor:"#BB62DC",
                                             fill: false
